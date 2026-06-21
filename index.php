@@ -1,6 +1,11 @@
 <?php
 $pageTitle = 'Dashboard';
 $pageDescription = 'Ringkasan informasi dan aktivitas sistem.';
+
+$pageActionLabel = 'Export Laporan';
+$pageActionIcon = 'bi bi-download';
+$pageActionUrl = '#';
+
 $activePage = 'dashboard';
 $contentPage = 'pages/dashboard.php';
 ?>

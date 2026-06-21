@@ -11,10 +11,15 @@
     <?php endif; ?>
   </div>
 
-  <div class="page-header-action">
-    <button type="button" class="btn btn-primary">
-      <i class="bi bi-plus-lg me-1"></i>
-      Tambah Data
-    </button>
-  </div>
+  <?php if (!empty($pageActionLabel)) : ?>
+    <div class="page-header-action">
+      <a href="<?= $pageActionUrl ?? '#'; ?>" class="btn btn-primary">
+        <?php if (!empty($pageActionIcon)) : ?>
+          <i class="<?= $pageActionIcon; ?> me-1"></i>
+        <?php endif; ?>
+
+        <?= $pageActionLabel; ?>
+      </a>
+    </div>
+  <?php endif; ?>
 </div>
