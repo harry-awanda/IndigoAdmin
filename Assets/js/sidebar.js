@@ -1,6 +1,6 @@
 /*
   Sidebar Manager
-  Mengatur sidebar desktop collapse dan mobile sidebar.
+  Mengatur sidebar desktop collapse, mobile sidebar, overlay, dan active submenu.
 */
 
 (function () {
@@ -42,21 +42,83 @@
   function handleSidebarToggle() {
     if (isDesktop()) {
       toggleDesktopSidebar();
-    } else {
-      openMobileSidebar();
+      return;
     }
+
+    openMobileSidebar();
   }
 
   function restoreDesktopSidebarState() {
     const savedState = localStorage.getItem(SIDEBAR_STORAGE_KEY);
 
-    if (savedState === 'true' && isDesktop()) {
+    if (isDesktop() && savedState === 'true') {
       body.classList.add('sidebar-collapsed');
+      return;
     }
 
     if (!isDesktop()) {
       body.classList.remove('sidebar-collapsed');
     }
+  }
+
+  function closeMobileSidebarOnMenuClick() {
+    const menuLinks = sidebar.querySelectorAll('.sidebar-link:not(.sidebar-group-toggle)');
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (!isDesktop()) {
+          closeMobileSidebar();
+        }
+      });
+    });
+  }
+
+  function syncSubmenuButtonState() {
+    const submenuList = sidebar.querySelectorAll('.sidebar-submenu');
+
+    submenuList.forEach(function (submenu) {
+      const submenuId = submenu.getAttribute('id');
+      const toggleButton = sidebar.querySelector(`[data-bs-target="#${submenuId}"]`);
+
+      if (!toggleButton) return;
+
+      submenu.addEventListener('shown.bs.collapse', function () {
+        toggleButton.setAttribute('aria-expanded', 'true');
+      });
+
+      submenu.addEventListener('hidden.bs.collapse', function () {
+        toggleButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  function openActiveSubmenu() {
+    const activeSubmenuLink = sidebar.querySelector('.sidebar-submenu .sidebar-link.active');
+
+    if (!activeSubmenuLink) return;
+
+    const activeSubmenu = activeSubmenuLink.closest('.sidebar-submenu');
+
+    if (!activeSubmenu) return;
+
+    const submenuId = activeSubmenu.getAttribute('id');
+    const toggleButton = sidebar.querySelector(`[data-bs-target="#${submenuId}"]`);
+
+    activeSubmenu.classList.add('show');
+
+    if (toggleButton) {
+      toggleButton.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  function handleViewportChange() {
+    if (isDesktop()) {
+      closeMobileSidebar();
+      restoreDesktopSidebarState();
+      return;
+    }
+
+    body.classList.remove('sidebar-collapsed');
   }
 
   sidebarToggle.addEventListener('click', handleSidebarToggle);
@@ -73,15 +135,20 @@
     }
   });
 
-  window.addEventListener('resize', function () {
-    if (isDesktop()) {
-      closeMobileSidebar();
-    } else {
-      body.classList.remove('sidebar-collapsed');
-    }
-  });
+  if (desktopQuery.addEventListener) {
+    desktopQuery.addEventListener('change', handleViewportChange);
+  } else if (desktopQuery.addListener) {
+    desktopQuery.addListener(handleViewportChange);
+  }
 
-  desktopQuery.addEventListener('change', restoreDesktopSidebarState);
-
+  closeMobileSidebarOnMenuClick();
+  syncSubmenuButtonState();
+  openActiveSubmenu();
   restoreDesktopSidebarState();
+
+  window.AppSidebar = {
+    openMobile: openMobileSidebar,
+    closeMobile: closeMobileSidebar,
+    toggleDesktop: toggleDesktopSidebar
+  };
 })();

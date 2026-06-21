@@ -718,19 +718,6 @@ h6 {
   border-radius: var(--app-radius-lg) !important;
 }
 
-.theme-option {
-  display: flex;
-  align-items: center;
-}
-
-.theme-option .theme-check {
-  display: none;
-}
-
-.theme-option.active .theme-check {
-  display: inline-flex;
-}
-
 /* ==================================================
    Responsive
 ================================================== */
@@ -1006,4 +993,31 @@ h6 {
 
 body.mobile-sidebar-open {
   overflow: hidden;
+}
+
+/* ==================================================
+   Stage 4 - JavaScript Helper Support
+================================================== */
+
+[data-bs-toggle="tooltip"],
+[data-bs-toggle="popover"] {
+  cursor: pointer;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.theme-option .theme-check {
+  display: none;
+}
+
+.theme-option.active .theme-check {
+  display: inline-flex;
+}
+
+.table-responsive.dropdown-visible {
+  overflow: visible;
 }
