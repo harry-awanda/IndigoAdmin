@@ -1,0 +1,44 @@
+/* ==================================================
+   Root Variables
+================================================== */
+
+:root {
+  --app-primary: #4F5FEA;
+  --app-primary-hover: #434DBA;
+  --app-primary-soft: #EEF2FF;
+
+  --app-success: #10B981;
+  --app-warning: #D97706;
+  --app-danger: #DF3A3A;
+  --app-info: #0284C7;
+}
+
+/* ==================================================
+   Light Theme
+================================================== */
+
+[data-bs-theme="light"] {
+  --app-body-bg: #F5F7FF;
+  --app-surface: #FFFFFF;
+  --app-surface-muted: #EEF2FF;
+  --app-border: #E2E8F0;
+
+  --app-text-primary: #1E293B;
+  --app-text-secondary: #64748B;
+  --app-text-muted: #94A3B8;
+}
+
+/* ==================================================
+   Dark Theme
+================================================== */
+
+[data-bs-theme="dark"] {
+  --app-body-bg: #111827;
+  --app-surface: #1F2937;
+  --app-surface-muted: #273244;
+  --app-border: #374151;
+
+  --app-text-primary: #E5E7EB;
+  --app-text-secondary: #9CA3AF;
+  --app-text-muted: #6B7280;
+}
