@@ -22,10 +22,10 @@
   --app-info-rgb: 2, 132, 199;
 
   /* Radius */
-  --app-radius-sm: .45rem;
-  --app-radius-md: .65rem;
-  --app-radius-lg: .85rem;
-  --app-radius-xl: 1rem;
+  --app-radius-sm: .35rem;
+  --app-radius-md: .45rem;
+  --app-radius-lg: .55rem;
+  --app-radius-xl: .65rem;
 
   /* Layout */
   --app-sidebar-width: 260px;
