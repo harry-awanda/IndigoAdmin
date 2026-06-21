@@ -509,7 +509,7 @@ h6 {
   color: var(--app-text-primary);
 }
 
-.table-hover > tbody > tr:hover > * {
+.table-hover>tbody>tr:hover>* {
   --bs-table-bg-state: var(--app-surface-hover);
 }
 
@@ -799,7 +799,17 @@ h6 {
   overflow-x: hidden;
 }
 
-/* Sidebar Group */
+/* ==================================================
+   Sidebar Group
+================================================== */
+
+.sidebar-menu {
+  position: relative;
+}
+
+.sidebar-link {
+  position: relative;
+}
 
 .sidebar-group-toggle {
   width: 100%;
@@ -811,18 +821,43 @@ h6 {
 .sidebar-chevron {
   margin-left: auto;
   font-size: .75rem;
-  transition: transform var(--app-transition);
+  transition: transform .24s cubic-bezier(.4, 0, .2, 1);
 }
 
 .sidebar-group-toggle[aria-expanded="true"] .sidebar-chevron {
   transform: rotate(180deg);
 }
 
+/* ==================================================
+   Sidebar Submenu
+================================================== */
+
 .sidebar-submenu {
-  margin-bottom: .25rem;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  background-color: var(--app-sidebar-bg);
+  overflow: hidden;
+}
+
+.sidebar-submenu-inner {
+  padding: .15rem 0 .4rem;
+}
+
+.sidebar-submenu.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height .24s cubic-bezier(.4, 0, .2, 1);
+  will-change: height;
+}
+
+.sidebar-submenu.collapse.show {
+  display: block;
+  overflow: hidden;
 }
 
 .sidebar-sublink {
+  position: relative;
   min-height: 36px;
   padding-top: .55rem;
   padding-bottom: .55rem;
@@ -832,12 +867,14 @@ h6 {
 
 .sidebar-sublink::before {
   content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.65rem;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: var(--app-text-muted);
-  position: absolute;
-  margin-left: -1.1rem;
+  transform: translateY(-50%);
 }
 
 .sidebar-sublink.active::before,

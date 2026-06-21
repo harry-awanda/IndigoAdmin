@@ -42,29 +42,31 @@
       </button>
 
       <div class="sidebar-submenu collapse show" id="masterDataMenu">
-        <a
-          href="#"
-          class="sidebar-link sidebar-sublink <?= ($activePage ?? '') === 'students' ? 'active' : ''; ?>"
-          title="Data Siswa"
-        >
-          <span>Data Siswa</span>
-        </a>
+        <div class="sidebar-submenu-inner">
+          <a
+            href="#"
+            class="sidebar-link sidebar-sublink <?= ($activePage ?? '') === 'students' ? 'active' : ''; ?>"
+            data-sidebar-title="Data Siswa"
+          >
+            <span>Data Siswa</span>
+          </a>
 
-        <a
-          href="#"
-          class="sidebar-link sidebar-sublink <?= ($activePage ?? '') === 'teachers' ? 'active' : ''; ?>"
-          title="Data Guru"
-        >
-          <span>Data Guru</span>
-        </a>
+          <a
+            href="#"
+            class="sidebar-link sidebar-sublink <?= ($activePage ?? '') === 'teachers' ? 'active' : ''; ?>"
+            data-sidebar-title="Data Guru"
+          >
+            <span>Data Guru</span>
+          </a>
 
-        <a
-          href="#"
-          class="sidebar-link sidebar-sublink <?= ($activePage ?? '') === 'classes' ? 'active' : ''; ?>"
-          title="Data Kelas"
-        >
-          <span>Data Kelas</span>
-        </a>
+          <a
+            href="#"
+            class="sidebar-link sidebar-sublink <?= ($activePage ?? '') === 'classes' ? 'active' : ''; ?>"
+            data-sidebar-title="Data Kelas"
+          >
+            <span>Data Kelas</span>
+          </a>
+        </div>
       </div>
 
       <a
