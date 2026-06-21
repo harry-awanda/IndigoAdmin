@@ -3,14 +3,37 @@
 ================================================== */
 
 :root {
+  /* Brand Colors */
   --app-primary: #4F5FEA;
   --app-primary-hover: #434DBA;
   --app-primary-soft: #EEF2FF;
 
+  --app-secondary: #64748B;
   --app-success: #10B981;
   --app-warning: #D97706;
   --app-danger: #DF3A3A;
   --app-info: #0284C7;
+
+  /* RGB Colors */
+  --app-primary-rgb: 79, 95, 234;
+  --app-success-rgb: 16, 185, 129;
+  --app-warning-rgb: 217, 119, 6;
+  --app-danger-rgb: 223, 58, 58;
+  --app-info-rgb: 2, 132, 199;
+
+  /* Radius */
+  --app-radius-sm: .45rem;
+  --app-radius-md: .65rem;
+  --app-radius-lg: .85rem;
+  --app-radius-xl: 1rem;
+
+  /* Layout */
+  --app-sidebar-width: 260px;
+  --app-sidebar-collapsed-width: 76px;
+  --app-topbar-height: 64px;
+
+  /* Transition */
+  --app-transition: .2s ease;
 }
 
 /* ==================================================
@@ -18,14 +41,58 @@
 ================================================== */
 
 [data-bs-theme="light"] {
+  color-scheme: light;
+
   --app-body-bg: #F5F7FF;
   --app-surface: #FFFFFF;
   --app-surface-muted: #EEF2FF;
+  --app-surface-hover: #F8FAFC;
+
   --app-border: #E2E8F0;
+  --app-border-subtle: #EEF2F7;
 
   --app-text-primary: #1E293B;
   --app-text-secondary: #64748B;
   --app-text-muted: #94A3B8;
+
+  --app-heading-color: #1E293B;
+
+  --app-sidebar-bg: #FFFFFF;
+  --app-topbar-bg: #FFFFFF;
+  --app-card-bg: #FFFFFF;
+  --app-dropdown-bg: #FFFFFF;
+  --app-input-bg: #FFFFFF;
+
+  --app-shadow-sm: 0 1px 2px rgba(15, 23, 42, .04);
+  --app-shadow-md: 0 8px 24px rgba(15, 23, 42, .06);
+
+  --bs-body-bg: var(--app-body-bg);
+  --bs-body-color: var(--app-text-primary);
+
+  --bs-primary: var(--app-primary);
+  --bs-primary-rgb: var(--app-primary-rgb);
+
+  --bs-secondary: var(--app-secondary);
+
+  --bs-success: var(--app-success);
+  --bs-success-rgb: var(--app-success-rgb);
+
+  --bs-warning: var(--app-warning);
+  --bs-warning-rgb: var(--app-warning-rgb);
+
+  --bs-danger: var(--app-danger);
+  --bs-danger-rgb: var(--app-danger-rgb);
+
+  --bs-info: var(--app-info);
+  --bs-info-rgb: var(--app-info-rgb);
+
+  --bs-border-color: var(--app-border);
+  --bs-border-radius: var(--app-radius-md);
+  --bs-border-radius-sm: var(--app-radius-sm);
+  --bs-border-radius-lg: var(--app-radius-lg);
+
+  --bs-link-color: var(--app-primary);
+  --bs-link-hover-color: var(--app-primary-hover);
 }
 
 /* ==================================================
@@ -33,12 +100,111 @@
 ================================================== */
 
 [data-bs-theme="dark"] {
+  color-scheme: dark;
+
   --app-body-bg: #111827;
   --app-surface: #1F2937;
   --app-surface-muted: #273244;
+  --app-surface-hover: #2B3648;
+
   --app-border: #374151;
+  --app-border-subtle: #2F3A4C;
 
   --app-text-primary: #E5E7EB;
   --app-text-secondary: #9CA3AF;
   --app-text-muted: #6B7280;
+
+  --app-heading-color: #F9FAFB;
+
+  --app-sidebar-bg: #1F2937;
+  --app-topbar-bg: #1F2937;
+  --app-card-bg: #1F2937;
+  --app-dropdown-bg: #1F2937;
+  --app-input-bg: #273244;
+
+  --app-primary-soft: rgba(79, 95, 234, .16);
+
+  --app-shadow-sm: 0 1px 2px rgba(0, 0, 0, .2);
+  --app-shadow-md: 0 8px 24px rgba(0, 0, 0, .28);
+
+  --bs-body-bg: var(--app-body-bg);
+  --bs-body-color: var(--app-text-primary);
+
+  --bs-primary: var(--app-primary);
+  --bs-primary-rgb: var(--app-primary-rgb);
+
+  --bs-secondary: var(--app-secondary);
+
+  --bs-success: var(--app-success);
+  --bs-success-rgb: var(--app-success-rgb);
+
+  --bs-warning: var(--app-warning);
+  --bs-warning-rgb: var(--app-warning-rgb);
+
+  --bs-danger: var(--app-danger);
+  --bs-danger-rgb: var(--app-danger-rgb);
+
+  --bs-info: var(--app-info);
+  --bs-info-rgb: var(--app-info-rgb);
+
+  --bs-border-color: var(--app-border);
+  --bs-border-radius: var(--app-radius-md);
+  --bs-border-radius-sm: var(--app-radius-sm);
+  --bs-border-radius-lg: var(--app-radius-lg);
+
+  --bs-link-color: #A5B4FC;
+  --bs-link-hover-color: #C7D2FE;
+}
+
+/* ==================================================
+   Bootstrap Color Override
+================================================== */
+
+.btn-primary {
+  --bs-btn-bg: var(--app-primary);
+  --bs-btn-border-color: var(--app-primary);
+  --bs-btn-hover-bg: var(--app-primary-hover);
+  --bs-btn-hover-border-color: var(--app-primary-hover);
+  --bs-btn-active-bg: var(--app-primary-hover);
+  --bs-btn-active-border-color: var(--app-primary-hover);
+  --bs-btn-disabled-bg: var(--app-primary);
+  --bs-btn-disabled-border-color: var(--app-primary);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--app-primary);
+  --bs-btn-border-color: var(--app-primary);
+  --bs-btn-hover-bg: var(--app-primary);
+  --bs-btn-hover-border-color: var(--app-primary);
+  --bs-btn-active-bg: var(--app-primary);
+  --bs-btn-active-border-color: var(--app-primary);
+}
+
+.text-bg-primary {
+  background-color: var(--app-primary) !important;
+}
+
+.text-bg-success {
+  background-color: var(--app-success) !important;
+}
+
+.text-bg-warning {
+  background-color: var(--app-warning) !important;
+}
+
+.text-bg-danger {
+  background-color: var(--app-danger) !important;
+}
+
+.text-bg-info {
+  background-color: var(--app-info) !important;
+}
+
+/* ==================================================
+   Selection
+================================================== */
+
+::selection {
+  background-color: rgba(var(--app-primary-rgb), .2);
+  color: var(--app-text-primary);
 }

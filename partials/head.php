@@ -9,6 +9,21 @@
     <?= isset($pageTitle) ? $pageTitle . ' | Admin Template' : 'Admin Template'; ?>
   </title>
 
+  <!-- Initial Theme Loader -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('app-theme') || 'light';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      const activeTheme = savedTheme === 'system'
+        ? (prefersDark ? 'dark' : 'light')
+        : savedTheme;
+
+      document.documentElement.setAttribute('data-bs-theme', activeTheme);
+      document.documentElement.setAttribute('data-theme-choice', savedTheme);
+    })();
+  </script>
+
   <!-- Bootstrap CSS -->
   <?php if (file_exists(__DIR__ . '/../Assets/vendor/bootstrap/css/bootstrap.min.css')) : ?>
     <link rel="stylesheet" href="Assets/vendor/bootstrap/css/bootstrap.min.css">
