@@ -26,7 +26,121 @@
         <i class="bi bi-speedometer2"></i>
         <span>Dashboard</span>
       </a>
+      <button
+        class="sidebar-link sidebar-group-toggle <?= ($activePage ?? '') === 'components' ? 'active' : ''; ?>"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#componentsMenu"
+        aria-expanded="<?= ($activePage ?? '') === 'components' ? 'true' : 'false'; ?>"
+        aria-controls="componentsMenu"
+        data-sidebar-title="Components"
+      >
+        <i class="bi bi-grid-1x2"></i>
+        <span>Components</span>
+        <i class="bi bi-chevron-down sidebar-chevron"></i>
+      </button>
 
+      <div class="sidebar-submenu collapse <?= ($activePage ?? '') === 'components' ? 'show' : ''; ?>" id="componentsMenu">
+        <div class="sidebar-submenu-inner">
+
+          <a
+            href="index.php?page=component-cards"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'cards' ? 'active' : ''; ?>"
+            data-sidebar-title="Cards"
+          >
+            <span>Cards</span>
+          </a>
+
+          <a
+            href="index.php?page=component-buttons"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'buttons' ? 'active' : ''; ?>"
+            data-sidebar-title="Buttons"
+          >
+            <span>Buttons</span>
+          </a>
+
+          <a
+            href="index.php?page=component-alerts"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'alerts' ? 'active' : ''; ?>"
+            data-sidebar-title="Alerts"
+          >
+            <span>Alerts</span>
+          </a>
+
+          <a
+            href="index.php?page=component-toasts"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'toasts' ? 'active' : ''; ?>"
+            data-sidebar-title="Toasts"
+          >
+            <span>Toasts</span>
+          </a>
+
+          <a
+            href="index.php?page=component-badges"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'badges' ? 'active' : ''; ?>"
+            data-sidebar-title="Badges"
+          >
+            <span>Badges</span>
+          </a>
+
+          <a
+            href="index.php?page=component-dropdowns"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'dropdowns' ? 'active' : ''; ?>"
+            data-sidebar-title="Dropdowns"
+          >
+            <span>Dropdowns</span>
+          </a>
+
+          <a
+            href="index.php?page=component-modals"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'modals' ? 'active' : ''; ?>"
+            data-sidebar-title="Modals"
+          >
+            <span>Modals</span>
+          </a>
+
+          <a
+            href="index.php?page=component-forms"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'forms' ? 'active' : ''; ?>"
+            data-sidebar-title="Forms"
+          >
+            <span>Forms</span>
+          </a>
+
+          <a
+            href="index.php?page=component-tables"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'tables' ? 'active' : ''; ?>"
+            data-sidebar-title="Tables"
+          >
+            <span>Tables</span>
+          </a>
+
+          <a
+            href="index.php?page=component-pagination"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'pagination' ? 'active' : ''; ?>"
+            data-sidebar-title="Pagination"
+          >
+            <span>Pagination</span>
+          </a>
+
+          <a
+            href="index.php?page=component-empty-state"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'empty-state' ? 'active' : ''; ?>"
+            data-sidebar-title="Empty State"
+          >
+            <span>Empty State</span>
+          </a>
+
+          <a
+            href="index.php?page=component-utilities"
+            class="sidebar-link sidebar-sublink <?= ($activeChild ?? '') === 'utilities' ? 'active' : ''; ?>"
+            data-sidebar-title="Utilities"
+          >
+            <span>Utilities</span>
+          </a>
+
+        </div>
+      </div>
       <button
         class="sidebar-link sidebar-group-toggle"
         type="button"

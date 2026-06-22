@@ -138,7 +138,7 @@ $quickActions = [
   <div class="row g-3">
     <?php foreach ($stats as $stat) : ?>
       <div class="col-12 col-md-6 col-xl-3">
-        <?php include __DIR__ . '/../components/stat-card.php'; ?>
+        <?php include __DIR__ . '/../pages/components/stat-card.php'; ?>
       </div>
     <?php endforeach; ?>
   </div>

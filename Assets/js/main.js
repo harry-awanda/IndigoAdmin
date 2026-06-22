@@ -1,6 +1,6 @@
 /*
   Main Script
-  Mengatur inisialisasi Bootstrap, active menu helper, search mobile, dan utility kecil.
+  Mengatur inisialisasi Bootstrap, active menu helper, search mobile, toast, dan utility kecil.
 */
 
 (function () {
@@ -39,15 +39,13 @@
   }
 
   function initActiveMenuByUrl() {
-    const currentPath = window.location.pathname.split('/').pop() || 'index.php';
+    const currentUrl = window.location.href;
     const sidebarLinks = document.querySelectorAll('.sidebar-link[href]');
 
     sidebarLinks.forEach(function (link) {
-      const linkPath = link.getAttribute('href');
+      const linkUrl = new URL(link.getAttribute('href'), window.location.origin);
 
-      if (!linkPath || linkPath === '#') return;
-
-      if (linkPath === currentPath) {
+      if (linkUrl.href === currentUrl) {
         link.classList.add('active');
       }
     });
@@ -106,6 +104,55 @@
     });
   }
 
+  function showToast(options) {
+    if (typeof bootstrap === 'undefined') return;
+
+    const toastElement = document.getElementById('appToast');
+    const toastTitle = document.getElementById('appToastTitle');
+    const toastMessage = document.getElementById('appToastMessage');
+    const toastIcon = document.getElementById('appToastIcon');
+
+    if (!toastElement || !toastTitle || !toastMessage || !toastIcon) return;
+
+    const type = options.type || 'info';
+    const title = options.title || 'Notifikasi';
+    const message = options.message || 'Pesan notifikasi.';
+
+    const iconMap = {
+      success: 'bi bi-check-circle',
+      warning: 'bi bi-exclamation-triangle',
+      danger: 'bi bi-x-circle',
+      info: 'bi bi-info-circle'
+    };
+
+    toastTitle.textContent = title;
+    toastMessage.textContent = message;
+
+    toastIcon.className = `toast-icon toast-icon-${type}`;
+    toastIcon.innerHTML = `<i class="${iconMap[type] || iconMap.info}"></i>`;
+
+    const toast = bootstrap.Toast.getOrCreateInstance(toastElement, {
+      autohide: true,
+      delay: 3000
+    });
+
+    toast.show();
+  }
+
+  function initToastDemo() {
+    const toastButtons = document.querySelectorAll('[data-toast-demo]');
+
+    toastButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        showToast({
+          type: button.getAttribute('data-toast-type') || 'info',
+          title: button.getAttribute('data-toast-title') || 'Notifikasi',
+          message: button.getAttribute('data-toast-message') || 'Pesan notifikasi.'
+        });
+      });
+    });
+  }
+
   function dispatchReadyEvent() {
     document.dispatchEvent(new CustomEvent('app:ready'));
   }
@@ -117,6 +164,10 @@
   initConfirmAction();
   initAutoDismissAlert();
   initDropdownInsideTableResponsive();
+  initToastDemo();
   dispatchReadyEvent();
-})();
 
+  window.AppToast = {
+    show: showToast
+  };
+})();
