@@ -3,8 +3,7 @@
     <li class="breadcrumb-item">
       <a href="index.php">Beranda</a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">
-      <?= $pageTitle ?? 'Dashboard'; ?>
-    </li>
+    <li class="breadcrumb-item active" aria-current="page"><?= $pageTitle; ?></li>
   </ol>
 </nav>
+

@@ -1,6 +1,6 @@
 /*
   Main Script
-  Mengatur inisialisasi Bootstrap, active menu helper, search mobile, toast, dan utility kecil.
+  Mengatur inisialisasi Bootstrap, search mobile, toast, dan utility kecil.
 */
 
 (function () {
@@ -34,19 +34,6 @@
 
       if (input) {
         input.focus();
-      }
-    });
-  }
-
-  function initActiveMenuByUrl() {
-    const currentUrl = window.location.href;
-    const sidebarLinks = document.querySelectorAll('.sidebar-link[href]');
-
-    sidebarLinks.forEach(function (link) {
-      const linkUrl = new URL(link.getAttribute('href'), window.location.origin);
-
-      if (linkUrl.href === currentUrl) {
-        link.classList.add('active');
       }
     });
   }
@@ -127,7 +114,6 @@
 
     toastTitle.textContent = title;
     toastMessage.textContent = message;
-
     toastIcon.className = `toast-icon toast-icon-${type}`;
     toastIcon.innerHTML = `<i class="${iconMap[type] || iconMap.info}"></i>`;
 
@@ -160,7 +146,6 @@
   initTooltips();
   initPopovers();
   initMobileSearchFocus();
-  initActiveMenuByUrl();
   initConfirmAction();
   initAutoDismissAlert();
   initDropdownInsideTableResponsive();
@@ -171,3 +156,4 @@
     show: showToast
   };
 })();
+

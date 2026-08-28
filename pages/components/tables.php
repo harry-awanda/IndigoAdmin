@@ -96,9 +96,9 @@
                   </button>
 
                   <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-eye me-2"></i>Detail</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
-                    <li><a class="dropdown-item text-danger" href="#" data-confirm="Yakin ingin menghapus data ini?"><i class="bi bi-trash me-2"></i>Hapus</a></li>
+                    <li><a class="dropdown-item" href="coming-soon.php"><i class="bi bi-eye me-2"></i>Detail</a></li>
+                    <li><a class="dropdown-item" href="coming-soon.php"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                    <li><a class="dropdown-item text-danger" href="coming-soon.php" data-confirm="Yakin ingin menghapus data ini?"><i class="bi bi-trash me-2"></i>Hapus</a></li>
                   </ul>
                 </div>
               </td>
@@ -139,15 +139,15 @@
           </li>
 
           <li class="page-item active">
-            <a class="page-link" href="#">1</a>
+            <a class="page-link" href="coming-soon.php">1</a>
           </li>
 
           <li class="page-item">
-            <a class="page-link" href="#">2</a>
+            <a class="page-link" href="coming-soon.php">2</a>
           </li>
 
           <li class="page-item">
-            <a class="page-link" href="#">Next</a>
+            <a class="page-link" href="coming-soon.php">Next</a>
           </li>
         </ul>
       </nav>
