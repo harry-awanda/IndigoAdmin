@@ -20,16 +20,13 @@
       <a href="index.php" class="sidebar-link" title="Academy" data-sidebar-title="Academy"><i class="bi bi-mortarboard"></i><span>Academy</span></a>
 
       <div class="sidebar-menu-label">Layouts</div>
-      <a href="coming-soon.php" class="sidebar-link" title="Collapsed menu" data-sidebar-title="Collapsed menu"><i class="bi bi-layout-sidebar-inset"></i><span>Collapsed menu</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Content navbar" data-sidebar-title="Content navbar"><i class="bi bi-window-stack"></i><span>Content navbar</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Horizontal" data-sidebar-title="Horizontal"><i class="bi bi-layout-three-columns"></i><span>Horizontal</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Blank" data-sidebar-title="Blank"><i class="bi bi-file-earmark"></i><span>Blank</span></a>
+      <a href="layout-blank.php" class="sidebar-link" title="Blank" data-sidebar-title="Blank"><i class="bi bi-file-earmark"></i><span>Blank</span></a>
 
       <div class="sidebar-menu-label">Apps & Pages</div>
-      <a href="coming-soon.php" class="sidebar-link" title="Email" data-sidebar-title="Email"><i class="bi bi-envelope"></i><span>Email</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Chat" data-sidebar-title="Chat"><i class="bi bi-chat-dots"></i><span>Chat</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Calendar" data-sidebar-title="Calendar"><i class="bi bi-calendar3"></i><span>Calendar</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Kanban" data-sidebar-title="Kanban"><i class="bi bi-columns-gap"></i><span>Kanban</span></a>
+      <a href="email.php" class="sidebar-link" title="Email" data-sidebar-title="Email"><i class="bi bi-envelope"></i><span>Email</span></a>
+      <a href="chat.php" class="sidebar-link" title="Chat" data-sidebar-title="Chat"><i class="bi bi-chat-dots"></i><span>Chat</span></a>
+      <a href="calendar.php" class="sidebar-link" title="Calendar" data-sidebar-title="Calendar"><i class="bi bi-calendar3"></i><span>Calendar</span></a>
+      <a href="kanban.php" class="sidebar-link" title="Kanban" data-sidebar-title="Kanban"><i class="bi bi-columns-gap"></i><span>Kanban</span></a>
 
       <button class="sidebar-link sidebar-group-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#ecommerceMenu" aria-expanded="false" aria-controls="ecommerceMenu" data-sidebar-title="eCommerce">
         <i class="bi bi-shop"></i><span>eCommerce</span><i class="bi bi-chevron-down sidebar-chevron"></i>
@@ -131,8 +128,8 @@
       <a href="coming-soon.php" class="sidebar-link" title="Leaflet Maps" data-sidebar-title="Leaflet Maps"><i class="bi bi-map"></i><span>Leaflet Maps</span></a>
 
       <div class="sidebar-menu-label">Misc</div>
-      <a href="coming-soon.php" class="sidebar-link" title="Support" data-sidebar-title="Support"><i class="bi bi-life-preserver"></i><span>Support</span></a>
-      <a href="coming-soon.php" class="sidebar-link" title="Documentation" data-sidebar-title="Documentation"><i class="bi bi-file-text"></i><span>Documentation</span></a>
+      <a href="support.php" class="sidebar-link" title="Support" data-sidebar-title="Support"><i class="bi bi-life-preserver"></i><span>Support</span></a>
+      <a href="documentation.php" class="sidebar-link" title="Documentation" data-sidebar-title="Documentation"><i class="bi bi-file-text"></i><span>Documentation</span></a>
     </nav>
   </div>
 </aside>
