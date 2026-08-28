@@ -1,40 +1,6 @@
-<section class="components-page">
-  <div class="card app-card component-section">
-    <div class="card-header app-card-header">
-      <div>
-        <h5 class="card-title mb-1">Solid Badges</h5>
-        <p class="card-subtitle">Badge solid untuk label yang lebih tegas.</p>
-      </div>
-    </div>
-
-    <div class="card-body">
-      <div class="component-preview">
-        <span class="badge text-bg-primary">Primary</span>
-        <span class="badge text-bg-success">Success</span>
-        <span class="badge text-bg-warning">Warning</span>
-        <span class="badge text-bg-danger">Danger</span>
-        <span class="badge text-bg-info">Info</span>
-        <span class="badge text-bg-secondary">Secondary</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="card app-card component-section">
-    <div class="card-header app-card-header">
-      <div>
-        <h5 class="card-title mb-1">Soft Badges</h5>
-        <p class="card-subtitle">Badge soft untuk status data admin.</p>
-      </div>
-    </div>
-
-    <div class="card-body">
-      <div class="component-preview">
-        <span class="badge badge-soft-primary">Aktif</span>
-        <span class="badge badge-soft-success">Hadir</span>
-        <span class="badge badge-soft-warning">Terlambat</span>
-        <span class="badge badge-soft-danger">Alpa</span>
-        <span class="badge badge-soft-info">Izin</span>
-      </div>
-    </div>
-  </div>
+<section class="components-page ui-showcase">
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Basic Badges</h5></div><div class="card-body"><div class="component-preview"><span class="badge text-bg-primary">Primary</span><span class="badge text-bg-secondary">Secondary</span><span class="badge text-bg-success">Success</span><span class="badge text-bg-danger">Danger</span><span class="badge text-bg-warning">Warning</span><span class="badge text-bg-info">Info</span><span class="badge text-bg-light text-dark">Light</span><span class="badge text-bg-dark">Dark</span></div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Label Badges</h5></div><div class="card-body"><div class="component-preview"><span class="badge badge-soft-primary">Primary</span><span class="badge badge-soft-success">Success</span><span class="badge badge-soft-warning">Warning</span><span class="badge badge-soft-danger">Danger</span><span class="badge badge-soft-info">Info</span></div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Pill Badges</h5></div><div class="card-body"><div class="component-preview"><span class="badge rounded-pill text-bg-primary">Primary</span><span class="badge rounded-pill text-bg-secondary">Secondary</span><span class="badge rounded-pill text-bg-success">Success</span><span class="badge rounded-pill text-bg-danger">Danger</span><span class="badge rounded-pill text-bg-warning">Warning</span><span class="badge rounded-pill text-bg-info">Info</span></div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Badges With Icons</h5></div><div class="card-body"><div class="component-preview"><span class="badge text-bg-primary"><i class="bi bi-star me-1"></i>Featured</span><span class="badge text-bg-success"><i class="bi bi-check2 me-1"></i>Approved</span><span class="badge text-bg-danger"><i class="bi bi-x-lg me-1"></i>Rejected</span></div></div></div>
 </section>

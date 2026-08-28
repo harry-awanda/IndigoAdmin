@@ -1,48 +1,5 @@
-<section class="components-page">
-  <div class="card app-card component-section">
-    <div class="card-header app-card-header">
-      <div>
-        <h5 class="card-title mb-1">Alerts</h5>
-        <p class="card-subtitle">Pesan informasi yang tampil langsung di halaman.</p>
-      </div>
-    </div>
-
-    <div class="card-body">
-      <div class="alert alert-primary app-alert">
-        <i class="bi bi-info-circle alert-icon"></i>
-        <div><strong>Informasi.</strong> Ini adalah alert primary.</div>
-      </div>
-
-      <div class="alert alert-success app-alert">
-        <i class="bi bi-check-circle alert-icon"></i>
-        <div><strong>Berhasil.</strong> Data berhasil disimpan.</div>
-      </div>
-
-      <div class="alert alert-warning app-alert">
-        <i class="bi bi-exclamation-triangle alert-icon"></i>
-        <div><strong>Perhatian.</strong> Silakan periksa kembali data.</div>
-      </div>
-
-      <div class="alert alert-danger app-alert mb-0">
-        <i class="bi bi-x-circle alert-icon"></i>
-        <div><strong>Gagal.</strong> Data gagal diproses.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card app-card component-section">
-    <div class="card-header app-card-header">
-      <div>
-        <h5 class="card-title mb-1">Dismissible Alert</h5>
-        <p class="card-subtitle">Alert yang dapat ditutup oleh pengguna.</p>
-      </div>
-    </div>
-
-    <div class="card-body">
-      <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
-        Data berhasil disimpan.
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      </div>
-    </div>
-  </div>
+<section class="components-page ui-showcase">
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Basic Alerts</h5></div><div class="card-body ui-alert-stack"><div class="alert alert-primary" role="alert">This is a primary alert.</div><div class="alert alert-secondary" role="alert">This is a secondary alert.</div><div class="alert alert-success" role="alert">This is a success alert.</div><div class="alert alert-danger" role="alert">This is a danger alert.</div><div class="alert alert-warning" role="alert">This is a warning alert.</div><div class="alert alert-info" role="alert">This is an info alert.</div><div class="alert alert-light" role="alert">This is a light alert.</div><div class="alert alert-dark mb-0" role="alert">This is a dark alert.</div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Alerts With Icons</h5></div><div class="card-body ui-alert-stack"><div class="alert alert-primary app-alert"><i class="bi bi-info-circle alert-icon"></i><div>This primary alert includes an icon.</div></div><div class="alert alert-success app-alert"><i class="bi bi-check-circle alert-icon"></i><div>This success alert includes an icon.</div></div><div class="alert alert-warning app-alert"><i class="bi bi-exclamation-triangle alert-icon"></i><div>This warning alert includes an icon.</div></div><div class="alert alert-danger app-alert mb-0"><i class="bi bi-x-circle alert-icon"></i><div>This danger alert includes an icon.</div></div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Dismissible Alerts</h5></div><div class="card-body ui-alert-stack"><div class="alert alert-warning alert-dismissible fade show" role="alert">You can dismiss this warning alert.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div><div class="alert alert-success alert-dismissible fade show mb-0" role="alert">You can dismiss this success alert.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div></div>
 </section>

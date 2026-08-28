@@ -1,0 +1,4 @@
+<section class="components-page ui-showcase">
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Footer Examples</h5></div><div class="card-body"><div class="ui-footer-demo"><span>© 2026 IndigoAdmin</span><div><a href="coming-soon.php">License</a><a href="coming-soon.php">More Themes</a><a href="coming-soon.php">Documentation</a><a href="coming-soon.php">Support</a></div></div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Sticky Footer</h5></div><div class="card-body"><div class="ui-footer-demo ui-footer-demo-sticky"><span>Footer sticks to the bottom of its container.</span><div><a href="coming-soon.php">Help</a><a href="coming-soon.php">Contact</a></div></div></div></div>
+</section>

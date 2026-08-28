@@ -1,72 +1,12 @@
-<section class="components-page">
-    <div class="card app-card component-section">
-    <div class="card-header app-card-header">
-      <div>
-        <h5 class="card-title mb-1">Modals</h5>
-        <p class="card-subtitle">Dialog untuk detail data, form cepat, atau konfirmasi.</p>
-      </div>
-    </div>
-
-    <div class="card-body">
-      <div class="component-preview">
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
-          Basic Modal
-        </button>
-
-        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
-          Delete Confirmation
-        </button>
-      </div>
-    </div>
-  </div>
+<section class="components-page ui-showcase">
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Basic Modals</h5></div><div class="card-body"><div class="component-preview"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">Basic Modal</button><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCentered">Vertically Centered</button><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalScrollable">Scrollable</button><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBackdrop">Static Backdrop</button></div></div></div>
+  <div class="card app-card component-section"><div class="card-header"><h5 class="card-title mb-0">Sizes</h5></div><div class="card-body"><div class="component-preview"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSmall">Small</button><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLarge">Large</button><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExtraLarge">Extra Large</button><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFullscreen">Fullscreen</button></div></div></div>
 </section>
-
-<!-- Basic Modal -->
-<div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5">Basic Modal</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        Ini adalah contoh basic modal untuk menampilkan informasi singkat.
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Tutup</button>
-        <button type="button" class="btn btn-primary">Simpan</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Delete Confirmation Modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body text-center p-4">
-        <div class="modal-danger-icon mx-auto mb-3">
-          <i class="bi bi-trash"></i>
-        </div>
-
-        <h5>Hapus data?</h5>
-
-        <p class="text-app-secondary">
-          Data yang dihapus tidak dapat dikembalikan.
-        </p>
-
-        <div class="d-flex gap-2">
-          <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">
-            Batal
-          </button>
-
-          <button type="button" class="btn btn-danger w-100">
-            Hapus
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Basic Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><p>This is a basic modal with a standard header, body, and footer.</p></div><div class="modal-footer"><button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>
+<div class="modal fade" id="modalCentered" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Vertically Centered</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">This modal is centered in the viewport.</div></div></div></div>
+<div class="modal fade" id="modalScrollable" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Scrollable Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><p>Scrollable content starts here.</p><p>Chocolate cake powder dessert souffle topping.</p><p>Jelly beans toffee gingerbread fruitcake.</p><p>Candy canes bonbon gummies pastry muffin.</p><p>Cookie marshmallow jelly-o wafer tart.</p><p>Scrollable content ends here.</p></div><div class="modal-footer"><button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button></div></div></div></div>
+<div class="modal fade" id="modalBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Static Backdrop</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">This modal does not close when clicking outside.</div><div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button></div></div></div></div>
+<div class="modal fade" id="modalSmall" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Small Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Small modal content.</div></div></div></div>
+<div class="modal fade" id="modalLarge" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Large Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Large modal content.</div></div></div></div>
+<div class="modal fade" id="modalExtraLarge" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-xl"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Extra Large Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Extra large modal content.</div></div></div></div>
+<div class="modal fade" id="modalFullscreen" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-fullscreen"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Fullscreen Modal</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Fullscreen modal content.</div></div></div></div>
