@@ -67,7 +67,7 @@
         <div class="sidebar-submenu-inner">
           <a href="cards-basic.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Basic"><span>Basic</span></a>
           <a href="cards-advance.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Advance"><span>Advance</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Statistics"><span>Statistics</span></a>
+          <a href="cards-statistics.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Statistics"><span>Statistics</span></a>
           <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Analytics"><span>Analytics</span></a>
           <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Gamifications"><span>Gamifications</span></a>
           <a href="cards-actions.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Actions"><span>Actions</span></a>
