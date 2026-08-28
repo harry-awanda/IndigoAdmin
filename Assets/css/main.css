@@ -2808,3 +2808,157 @@ body {
     margin-left: 0;
   }
 }
+/* ==================================================
+   User Interface Components
+================================================== */
+
+.ui-showcase .accordion-item,
+.ui-showcase .list-group-item,
+.ui-showcase .offcanvas,
+.ui-showcase .modal-content,
+.ui-showcase .toast {
+  background-color: var(--app-surface);
+  color: var(--app-text-primary);
+  border-color: var(--app-border);
+}
+
+.app-accordion .accordion-button {
+  background-color: var(--app-surface);
+  color: var(--app-text-primary);
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.app-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--app-primary-soft);
+  color: var(--app-primary);
+}
+
+.accordion-without-arrow .accordion-button::after {
+  display: none;
+}
+
+.app-carousel img {
+  height: 320px;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.app-carousel .carousel-caption {
+  right: 1.5rem;
+  left: 1.5rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: rgba(15, 23, 42, .58);
+}
+
+.app-demo-box {
+  padding: 1rem;
+  border: 1px solid var(--app-border);
+  border-radius: .5rem;
+  background-color: var(--app-surface-muted);
+  color: var(--app-text-secondary);
+}
+
+.ui-footer-demo {
+  min-height: 72px;
+  padding: 1rem;
+  border: 1px solid var(--app-border);
+  border-radius: .5rem;
+  background-color: var(--app-surface-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ui-footer-demo div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ui-footer-demo-sticky {
+  min-height: 160px;
+  align-items: flex-end;
+}
+
+.app-list-group .list-group-item {
+  border-color: var(--app-border);
+  background-color: var(--app-surface);
+  color: var(--app-text-primary);
+}
+
+.app-list-group .list-group-item.active {
+  background-color: var(--app-primary);
+  border-color: var(--app-primary);
+  color: #fff;
+}
+
+.app-demo-navbar {
+  border: 1px solid var(--app-border);
+  border-radius: .5rem;
+  background-color: var(--app-surface);
+}
+
+.navbar-primary {
+  background-color: var(--app-primary);
+}
+
+.navbar-surface {
+  background-color: var(--app-surface-muted);
+}
+
+.ui-navbar-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.ui-progress-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.ui-progress-thin {
+  height: 4px;
+}
+
+.ui-progress-tall {
+  height: 16px;
+}
+
+.cards-progress-0 { width: 0; }
+.cards-progress-25 { width: 25%; }
+.cards-progress-50 { width: 50%; }
+.cards-progress-75 { width: 75%; }
+.cards-progress-100 { width: 100%; }
+
+.app-tab-content {
+  padding: 1rem 0 0;
+  color: var(--app-text-secondary);
+}
+
+.ui-vertical-tabs .nav-pills {
+  min-width: 180px;
+}
+
+.typography-showcase mark {
+  border-radius: .25rem;
+  background-color: rgba(var(--app-warning-rgb), .18);
+  color: var(--app-text-primary);
+}
+
+@media (max-width: 767.98px) {
+  .app-carousel img {
+    height: 220px;
+  }
+
+  .ui-vertical-tabs {
+    flex-direction: column;
+  }
+
+  .ui-vertical-tabs .nav-pills {
+    width: 100%;
+  }
+}
