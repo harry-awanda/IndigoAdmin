@@ -16,29 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const desktopQuery = window.matchMedia('(min-width: 992px)');
 
-    /*
-      Menu Toggle
-      Digunakan untuk membuka/menutup menu yang memakai struktur:
-      .menu-item > .menu-link.menu-toggle
-    */
-    function initMenuToggle() {
-      const menuToggles = document.querySelectorAll('.menu-link.menu-toggle');
-
-      menuToggles.forEach(function (toggle) {
-        toggle.addEventListener('click', function (event) {
-          event.preventDefault();
-
-          const menuItem = toggle.closest('.menu-item');
-
-          if (!menuItem) return;
-
-          menuItem.classList.toggle('open');
-        });
-      });
-    }
-
-    initMenuToggle();
-
     if (!sidebar || !sidebarToggle || !sidebarOverlay) return;
 
     function isDesktop() {
@@ -178,3 +155,4 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   })();
 });
+

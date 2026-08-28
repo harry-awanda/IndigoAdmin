@@ -182,59 +182,6 @@ h6 {
 }
 
 /* ==================================================
-   Sidebar Menu Toggle
-================================================== */
-
-.menu-sub {
-  display: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu-item.open > .menu-sub {
-  display: block;
-}
-
-.menu-header {
-  margin: 1rem 0 0.5rem;
-  padding: 0.5rem 1.5rem;
-  color: var(--app-text-muted);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.04rem;
-}
-
-.menu-link {
-  position: relative;
-}
-
-.menu-item.active > .menu-link {
-  color: var(--app-primary);
-  background-color: var(--app-primary-soft);
-}
-
-.menu-sub .menu-link {
-  padding-left: 3rem;
-}
-
-.menu-toggle::after {
-  content: "\ea50";
-  font-family: "boxicons";
-  position: absolute;
-  right: 1.25rem;
-  transition: transform 0.2s ease;
-}
-
-.menu-item.open > .menu-toggle::after {
-  transform: rotate(90deg);
-}
-
-.menu-link .badge {
-  margin-right: 1.5rem;
-}
-
-/* ==================================================
    Topbar
 ================================================== */
 
