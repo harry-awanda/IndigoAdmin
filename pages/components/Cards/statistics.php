@@ -1,58 +1,37 @@
-<section class="components-page cards-showcase">
+<section class="components-page cards-showcase cards-statistics-page">
   <div class="row g-3">
-    <div class="col-12 col-sm-6 col-xl-3">
-      <div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div class="stat-overview-content"><div class="stat-label">Total Courses</div><h4 class="stat-value">128</h4><div class="stat-trend stat-trend-up"><i class="bi bi-arrow-up-short"></i>18.2%</div></div><span class="stat-icon stat-icon-primary"><i class="bi bi-journal-bookmark"></i></span></div></div></div>
-    </div>
-    <div class="col-12 col-sm-6 col-xl-3">
-      <div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div class="stat-overview-content"><div class="stat-label">Active Students</div><h4 class="stat-value">4,280</h4><div class="stat-trend stat-trend-up"><i class="bi bi-arrow-up-short"></i>12.4%</div></div><span class="stat-icon stat-icon-success"><i class="bi bi-people"></i></span></div></div></div>
-    </div>
-    <div class="col-12 col-sm-6 col-xl-3">
-      <div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div class="stat-overview-content"><div class="stat-label">Certificates</div><h4 class="stat-value">945</h4><div class="stat-trend stat-trend-up"><i class="bi bi-arrow-up-short"></i>9.8%</div></div><span class="stat-icon stat-icon-warning"><i class="bi bi-award"></i></span></div></div></div>
-    </div>
-    <div class="col-12 col-sm-6 col-xl-3">
-      <div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div class="stat-overview-content"><div class="stat-label">Pending Reviews</div><h4 class="stat-value">64</h4><div class="stat-trend stat-trend-down"><i class="bi bi-arrow-down-short"></i>3.1%</div></div><span class="stat-icon stat-icon-info"><i class="bi bi-chat-square-text"></i></span></div></div></div>
-    </div>
+    <div class="col-sm-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div><div class="stat-label">Session</div><h4 class="stat-value">58,352</h4><div class="stat-trend stat-trend-up">(+29%)</div><p class="stat-description">Last Week Analytics</p></div><span class="stat-icon stat-icon-primary"><i class="bi bi-activity"></i></span></div></div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div><div class="stat-label">Time On Site</div><h4 class="stat-value">28m 14s</h4><div class="stat-trend stat-trend-up">(+18%)</div><p class="stat-description">Last Week Analytics</p></div><span class="stat-icon stat-icon-success"><i class="bi bi-clock-history"></i></span></div></div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div><div class="stat-label">Bounce Rate</div><h4 class="stat-value">62%</h4><div class="stat-trend stat-trend-down">(-14%)</div><p class="stat-description">Last Week Analytics</p></div><span class="stat-icon stat-icon-warning"><i class="bi bi-arrow-repeat"></i></span></div></div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-overview"><div><div class="stat-label">Users</div><h4 class="stat-value">18,472</h4><div class="stat-trend stat-trend-up">(+42%)</div><p class="stat-description">Last Week Analytics</p></div><span class="stat-icon stat-icon-info"><i class="bi bi-people"></i></span></div></div></div></div>
   </div>
 
   <div class="row g-3">
-    <div class="col-12 col-xl-4">
-      <div class="card app-card h-100">
-        <div class="card-body">
-          <div class="app-card-header mb-4"><div><h5 class="card-title mb-1">Completion Rate</h5><p class="card-subtitle">Course completion this month.</p></div><span class="badge badge-soft-success">Good</span></div>
-          <div class="cards-radial mx-auto mb-4" style="--cards-progress: 82%"><span>82%</span></div>
-          <div class="d-flex justify-content-between gap-3"><div><div class="stat-label">Completed</div><div class="stat-value">1,482</div></div><div class="text-end"><div class="stat-label">Target</div><div class="stat-value">1,800</div></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-xl-4">
-      <div class="card app-card h-100">
-        <div class="card-header app-card-header"><div><h5 class="card-title mb-1">Weekly Learning</h5><p class="card-subtitle">Mini trend card.</p></div><span class="badge badge-soft-primary">7 days</span></div>
-        <div class="card-body">
-          <div class="cards-mini-bars" aria-label="Weekly learning activity"><span style="height: 38%"></span><span style="height: 64%"></span><span style="height: 48%"></span><span style="height: 76%"></span><span style="height: 58%"></span><span style="height: 86%"></span><span style="height: 72%"></span></div>
-          <div class="d-flex justify-content-between mt-4"><span class="text-app-muted small">Mon</span><span class="text-app-muted small">Sun</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-xl-4">
-      <div class="card app-card h-100">
-        <div class="card-header"><h5 class="card-title mb-0">Top Categories</h5></div>
-        <div class="card-body"><div class="attendance-summary-list">
-          <div class="attendance-summary-item"><div class="attendance-summary-info"><div><div class="attendance-summary-label">UI Design</div><div class="attendance-summary-value">1,240 enrollments</div></div><span class="attendance-summary-percent">72%</span></div><div class="progress app-progress"><div class="progress-bar bg-primary" style="width: 72%"></div></div></div>
-          <div class="attendance-summary-item"><div class="attendance-summary-info"><div><div class="attendance-summary-label">Frontend</div><div class="attendance-summary-value">980 enrollments</div></div><span class="attendance-summary-percent">64%</span></div><div class="progress app-progress"><div class="progress-bar bg-success" style="width: 64%"></div></div></div>
-          <div class="attendance-summary-item"><div class="attendance-summary-info"><div><div class="attendance-summary-label">Data Basics</div><div class="attendance-summary-value">740 enrollments</div></div><span class="attendance-summary-percent">48%</span></div><div class="progress app-progress"><div class="progress-bar bg-info" style="width: 48%"></div></div></div>
-        </div></div>
-      </div>
-    </div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Total Sales</h6><div class="dropdown"><button class="btn btn-light btn-icon btn-sm" data-bs-toggle="dropdown" type="button" aria-label="Total sales period"><i class="bi bi-three-dots-vertical"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="coming-soon.php">Today</a></li><li><a class="dropdown-item" href="coming-soon.php">Yesterday</a></li><li><a class="dropdown-item" href="coming-soon.php">Last Week</a></li><li><a class="dropdown-item" href="coming-soon.php">Last Month</a></li></ul></div></div><div class="card-body"><h3>8,352</h3><p class="text-app-secondary mb-2">12% of target</p><span class="badge badge-soft-success">+29%</span></div></div></div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Referral Income</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Referral options"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body"><h3>$1,271</h3><p class="text-app-secondary mb-2">34% of target</p><span class="badge badge-soft-danger">-23%</span></div></div></div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Customers</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Customer options"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body"><h3>24,680</h3><p class="text-app-secondary mb-2">29% of target</p><span class="badge badge-soft-success">+42%</span></div></div></div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Orders Received</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Order options"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body"><h3>1,862</h3><p class="text-app-secondary mb-2">47% of target</p><span class="badge badge-soft-success">+82%</span></div></div></div>
   </div>
 
   <div class="row g-3">
-    <div class="col-12 col-lg-6">
-      <div class="card app-card h-100"><div class="card-body"><h5 class="card-title mb-4">Score Distribution</h5><div class="cards-score-row"><span>90-100</span><div class="progress app-progress"><div class="progress-bar bg-success" style="width: 68%"></div></div><strong>68%</strong></div><div class="cards-score-row"><span>75-89</span><div class="progress app-progress"><div class="progress-bar bg-primary" style="width: 52%"></div></div><strong>52%</strong></div><div class="cards-score-row"><span>60-74</span><div class="progress app-progress"><div class="progress-bar bg-warning" style="width: 26%"></div></div><strong>26%</strong></div></div></div>
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="card app-card h-100"><div class="card-body"><div class="app-card-header mb-4"><div><h5 class="card-title mb-1">Learning Goals</h5><p class="card-subtitle">Statistic card with icon metrics.</p></div><span class="stat-icon stat-icon-primary"><i class="bi bi-bullseye"></i></span></div><div class="row g-3"><div class="col-6"><div class="cards-goal-box"><span class="avatar avatar-success"><i class="bi bi-lightning-charge"></i></span><strong>24k</strong><span>Minutes</span></div></div><div class="col-6"><div class="cards-goal-box"><span class="avatar avatar-warning"><i class="bi bi-star"></i></span><strong>8.6k</strong><span>Points</span></div></div></div></div></div>
-    </div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><div class="cards-action-head"><span class="avatar"><i class="bi bi-credit-card"></i></span><div class="dropdown"><button class="btn btn-light btn-icon btn-sm" data-bs-toggle="dropdown" type="button" aria-label="Transactions card actions"><i class="bi bi-three-dots-vertical"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="coming-soon.php">View More</a></li><li><a class="dropdown-item text-danger" href="coming-soon.php">Delete</a></li></ul></div></div><div class="stat-label mt-3">Transactions</div><h4 class="stat-value">$14,857</h4><span class="text-success fw-semibold">+28.14%</span></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><div class="cards-action-head"><span class="avatar avatar-warning"><i class="bi bi-box-seam"></i></span><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Order card actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="stat-label mt-3">Order</div><h4 class="stat-value">$1,286</h4><span class="text-danger fw-semibold">-13.24%</span></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><div class="cards-action-head"><span class="avatar avatar-success"><i class="bi bi-bar-chart"></i></span><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Profit card actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="stat-label mt-3">Profit</div><h4 class="stat-value">$12,628</h4><span class="text-success fw-semibold">+72.80%</span></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><div class="cards-action-head"><span class="avatar avatar-info"><i class="bi bi-paypal"></i></span><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Payment card actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="stat-label mt-3">Payments</div><h4 class="stat-value">$2,456</h4><span class="text-danger fw-semibold">-14.82%</span></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><div class="cards-action-head"><span class="avatar"><i class="bi bi-pc-display"></i></span><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Revenue card actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="stat-label mt-3">Revenue</div><h4 class="stat-value">$42,389</h4><span class="text-success fw-semibold">+52.18%</span></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><div class="cards-action-head"><span class="avatar avatar-success"><i class="bi bi-wallet2"></i></span><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Sales card actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="stat-label mt-3">Sales</div><h4 class="stat-value">$4,679</h4><span class="text-success fw-semibold">+28.42%</span></div></div></div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-label">Order</div><h3>276k</h3><div class="cards-mini-bars"><span class="cards-bar-38"></span><span class="cards-bar-64"></span><span class="cards-bar-48"></span><span class="cards-bar-76"></span></div></div></div></div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-label">Revenue</div><h3>425k</h3><div class="cards-mini-bars"><span class="cards-bar-64"></span><span class="cards-bar-48"></span><span class="cards-bar-86"></span><span class="cards-bar-72"></span></div></div></div></div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-label">Profit</div><h3>624k</h3><div class="cards-radial cards-radial-82 mx-auto"><span>82%</span></div></div></div></div>
+    <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-body"><div class="stat-label">Sessions</div><h3>2,845</h3><div class="progress app-progress"><div class="progress-bar bg-primary cards-progress-76"></div></div><p class="text-app-muted small mt-3 mb-0">Strong weekly engagement.</p></div></div></div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><h5 class="card-title">Expenses</h5><h3>$21k</h3><p class="text-app-secondary">Expenses more than last month</p><div class="progress app-progress"><div class="progress-bar bg-warning cards-progress-58"></div></div></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><h5 class="card-title">Sales</h5><h3>482k</h3><p class="text-success mb-3">+34% Sales Target</p><div class="cards-radial cards-radial-78 mx-auto"><span>78%</span></div></div></div></div>
+    <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-body"><h5 class="card-title">Generated Leads</h5><p class="text-app-secondary">Monthly Report</p><h3>4,230</h3><div class="cards-score-row"><span>New Visitors</span><div class="progress app-progress"><div class="progress-bar bg-danger cards-progress-23"></div></div><strong>23%</strong></div><div class="cards-score-row"><span>Activity</span><div class="progress app-progress"><div class="progress-bar bg-success cards-progress-82"></div></div><strong>82%</strong></div></div></div></div>
   </div>
 </section>

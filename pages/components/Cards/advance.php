@@ -1,91 +1,66 @@
-<section class="components-page cards-showcase">
+<section class="components-page cards-showcase cards-advance-page">
   <div class="row g-3">
     <div class="col-12 col-xl-4">
-      <div class="card app-card h-100 overflow-hidden">
-        <img src="Assets/img/cards/profile-card-cover.png" class="cards-media cards-profile-cover" alt="Learner profile achievements">
-        <div class="card-body text-center">
-          <div class="cards-avatar mx-auto mb-3">HW</div>
-          <h5 class="card-title mb-1">Harry Awanda</h5>
-          <p class="text-app-secondary mb-3">Frontend Learning Path</p>
-          <div class="d-flex justify-content-center gap-2 mb-4">
-            <span class="badge badge-soft-primary">UI</span>
-            <span class="badge badge-soft-success">Active</span>
-            <span class="badge badge-soft-info">Mentor</span>
-          </div>
-          <div class="row g-0 text-center cards-profile-stats">
-            <div class="col"><strong>32</strong><span>Courses</span></div>
-            <div class="col"><strong>1.8k</strong><span>Points</span></div>
-            <div class="col"><strong>24</strong><span>Badges</span></div>
-          </div>
+      <div class="card app-card h-100">
+        <div class="card-header app-card-header"><div><h5 class="card-title mb-1">Employee List</h5><p class="card-subtitle">Featured Employees Based on Task</p></div><a href="coming-soon.php" class="card-footer-link">See All</a></div>
+        <div class="card-body cards-stack-list">
+          <div class="cards-person-row"><span class="avatar">A</span><div><h6>Alberta</h6><small>UI Designer</small></div><strong>100h: <span>138h</span></strong></div>
+          <div class="cards-person-row"><span class="avatar avatar-success">P</span><div><h6>Paul</h6><small>Branding</small></div><strong>121h: <span>109h</span></strong></div>
+          <div class="cards-person-row"><span class="avatar avatar-warning">N</span><div><h6>Nannie</h6><small>iOS Developer</small></div><strong>112h: <span>160h</span></strong></div>
+          <div class="cards-person-row"><span class="avatar avatar-danger">R</span><div><h6>Rodney</h6><small>iOS Developer</small></div><strong>125h: <span>166h</span></strong></div>
+          <div class="cards-person-row"><span class="avatar avatar-success">M</span><div><h6>Martin</h6><small>Product Designer</small></div><strong>76h: <span>89h</span></strong></div>
+          <div class="cards-person-row"><span class="avatar">N</span><div><h6>Nancy</h6><small>PHP Developer</small></div><strong>22h: <span>45h</span></strong></div>
         </div>
       </div>
     </div>
 
-    <div class="col-12 col-xl-8">
+    <div class="col-12 col-xl-4">
       <div class="card app-card h-100">
-        <div class="row g-0 h-100">
-          <div class="col-12 col-lg-5">
-            <img src="Assets/img/cards/course-preview.png" class="cards-media cards-media-horizontal" alt="Learning path course preview">
-          </div>
-          <div class="col-12 col-lg-7">
-            <div class="card-body h-100 d-flex flex-column">
-              <div class="app-card-header mb-4">
-                <div>
-                  <h5 class="card-title mb-1">Course Progress</h5>
-                  <p class="card-subtitle">Fullstack admin interface track.</p>
-                </div>
-                <span class="badge badge-soft-success">76%</span>
-              </div>
-              <div class="progress app-progress mb-3">
-                <div class="progress-bar bg-primary" style="width: 76%"></div>
-              </div>
-              <div class="row g-3 mb-4">
-                <div class="col-6 col-md-4"><div class="stat-label">Hours Spent</div><div class="stat-value">34h</div></div>
-                <div class="col-6 col-md-4"><div class="stat-label">Lessons</div><div class="stat-value">42/56</div></div>
-                <div class="col-6 col-md-4"><div class="stat-label">Score</div><div class="stat-value">88%</div></div>
-              </div>
-              <div class="mt-auto d-flex flex-wrap gap-2">
-                <button type="button" class="btn btn-primary btn-sm">Continue Course</button>
-                <button type="button" class="btn btn-light btn-sm">View Outline</button>
-              </div>
-            </div>
-          </div>
+        <div class="card-header app-card-header"><h5 class="card-title mb-0">Transactions</h5><div class="dropdown"><button class="btn btn-light btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-label="Transaction period"><i class="bi bi-three-dots-vertical"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="coming-soon.php">Last 28 Days</a></li><li><a class="dropdown-item" href="coming-soon.php">Last Month</a></li><li><a class="dropdown-item" href="coming-soon.php">Last Year</a></li></ul></div></div>
+        <div class="card-body cards-stack-list">
+          <div class="cards-transaction-row"><span class="avatar"><i class="bi bi-paypal"></i></span><div><h6>Paypal</h6><small>Send money</small></div><strong class="text-app-primary">+82.6 USD</strong></div>
+          <div class="cards-transaction-row"><span class="avatar avatar-success"><i class="bi bi-wallet2"></i></span><div><h6>Wallet</h6><small>Mac'D</small></div><strong class="text-app-primary">+270.69 USD</strong></div>
+          <div class="cards-transaction-row"><span class="avatar avatar-warning"><i class="bi bi-arrow-left-right"></i></span><div><h6>Transfer</h6><small>Refund</small></div><strong class="text-app-primary">+637.91 USD</strong></div>
+          <div class="cards-transaction-row"><span class="avatar avatar-danger"><i class="bi bi-credit-card"></i></span><div><h6>Credit Card</h6><small>Ordered Food</small></div><strong class="text-danger">-838.71 USD</strong></div>
+          <div class="cards-transaction-row"><span class="avatar avatar-success"><i class="bi bi-wallet2"></i></span><div><h6>Wallet</h6><small>Starbucks</small></div><strong class="text-app-primary">+203.33 USD</strong></div>
+          <div class="cards-transaction-row"><span class="avatar avatar-danger"><i class="bi bi-credit-card-2-front"></i></span><div><h6>Mastercard</h6><small>Ordered Food</small></div><strong class="text-danger">-92.45 USD</strong></div>
         </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-xl-4">
+      <div class="card app-card h-100 overflow-hidden">
+        <div class="card-body d-flex align-items-center gap-3"><span class="avatar avatar-success">O</span><div><h5 class="card-title mb-1">Olivia Shared Event</h5><p class="text-app-muted mb-0">07 Sep 2020 at 10:30 AM</p></div></div>
+        <img src="Assets/img/cards/webinar-cover.png" class="cards-media" alt="Shared technical event cover">
+        <div class="card-body"><div class="d-flex align-items-center gap-3 mb-3"><div class="cards-date-box"><strong>21</strong><span>May</span></div><div><h5 class="card-title mb-1">How To Excel In A Technical Terminology?</h5><div class="d-flex gap-2"><span class="badge badge-soft-primary">Technical</span><span class="badge badge-soft-info">Account</span><span class="badge badge-soft-success">Excel</span></div></div></div><div class="d-flex justify-content-between align-items-center"><div class="avatar-group"><span class="avatar">A</span><span class="avatar avatar-success">B</span><span class="avatar avatar-warning">C</span><span class="avatar avatar-danger">D</span></div><a href="coming-soon.php" class="btn btn-primary btn-sm">Join Now</a></div><div class="d-flex gap-3 mt-3 text-app-muted small"><span><i class="bi bi-chat-dots me-1"></i>236</span><span><i class="bi bi-heart me-1"></i>12</span></div></div>
       </div>
     </div>
   </div>
 
   <div class="row g-3">
-    <div class="col-12 col-lg-5">
-      <div class="card app-card h-100">
-        <img src="Assets/img/cards/webinar-cover.png" class="cards-media" alt="Online webinar session">
-        <div class="card-body">
-          <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
-            <span class="badge badge-soft-primary">17 Nov</span>
-            <span class="text-app-muted small">32 minutes</span>
-          </div>
-          <h5 class="card-title mb-2">Upcoming Webinar</h5>
-          <p class="text-app-secondary mb-4">Next generation frontend architecture for admin interfaces.</p>
-          <a href="coming-soon.php" class="btn btn-primary w-100">Join the event</a>
-        </div>
-      </div>
-    </div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Payment Data</h5><div class="btn-group btn-group-sm"><button class="btn btn-light" type="button">Last Month</button><button class="btn btn-light" type="button">Last Week</button><button class="btn btn-light" type="button">24 Hours</button></div></div><div class="card-body"><div class="cards-price mb-3"><span>Price</span><strong>$455.60</strong><em>35% OFF</em></div><p class="text-app-secondary">Choose payment method:</p><div class="cards-choice-list mb-3"><label><input type="radio" name="payment-demo" checked> Paypal</label><label><input type="radio" name="payment-demo"> Credit Card</label></div><div class="row g-2"><div class="col-12"><input class="form-control" value="1356 3215 6548 7898" aria-label="Card Number"></div><div class="col-6"><input class="form-control" value="MM/YY" aria-label="Exp Date"></div><div class="col-6"><input class="form-control" value="654" aria-label="CVV Code"></div><div class="col-12"><input class="form-control" value="John Doe" aria-label="Name"></div></div><label class="form-check mt-3"><input class="form-check-input" type="checkbox" checked><span class="form-check-label">Save card?</span></label><button class="btn btn-primary w-100 mt-3" type="button">Add Card</button></div></div></div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">For Business Sharks</h5><div class="dropdown"><button class="btn btn-light btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-label="Business card actions"><i class="bi bi-three-dots-vertical"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="coming-soon.php">Select All</a></li><li><a class="dropdown-item" href="coming-soon.php">Refresh</a></li><li><a class="dropdown-item" href="coming-soon.php">Share</a></li></ul></div></div><div class="card-body"><p class="text-app-secondary">Here, i focus ona range of items and featured that we use in life without them</p><h6>Basic price is $30</h6><div class="cards-choice-list"><label><input type="checkbox" checked> Branding + $30</label><label><input type="checkbox"> Marketing + $75</label><label><input type="checkbox"> App Building + $125</label><label><input type="checkbox"> SEO + $48</label></div><div class="cards-total-row"><span>Vat Taxes</span><strong>$24</strong></div><div class="cards-total-row"><span>Total Amount</span><strong>$99</strong></div><hr><button class="btn btn-primary w-100" type="button">Purchase</button></div></div></div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Upgrade Your Plan</h5><div class="dropdown"><button class="btn btn-light btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-label="Upgrade actions"><i class="bi bi-three-dots-vertical"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="coming-soon.php">Select All</a></li><li><a class="dropdown-item" href="coming-soon.php">Refresh</a></li><li><a class="dropdown-item" href="coming-soon.php">Share</a></li></ul></div></div><div class="card-body"><p class="text-app-secondary">Please make the payment to start enjoying all premium plan features.</p><div class="cards-plan-card mb-3"><span class="avatar"><i class="bi bi-briefcase"></i></span><div><h6>Business</h6><small>Upgrade Plan</small></div><strong>$2,124 <small>/Year</small></strong></div><h6>Payment Details</h6><div class="cards-payment-row"><span class="avatar avatar-info"><i class="bi bi-credit-card"></i></span><div><h6>Visa Card</h6><small>8562 xxxx xxxx 4563</small></div><input class="form-control cards-cvv" value="CVV" aria-label="Visa CVV"></div><div class="cards-payment-row"><span class="avatar avatar-warning"><i class="bi bi-credit-card-2-front"></i></span><div><h6>Master Card</h6><small>5688 xxxx xxxx 2356</small></div><input class="form-control cards-cvv" value="CVV" aria-label="Mastercard CVV"></div><a href="coming-soon.php" class="card-footer-link d-inline-flex mb-3">Add Payment Method</a><input class="form-control mb-3" placeholder="Email Address" aria-label="Email Address"><button class="btn btn-primary w-100" type="button">Process to payment</button></div></div></div>
+  </div>
 
-    <div class="col-12 col-lg-7">
-      <div class="card app-card h-100">
-        <div class="card-header app-card-header">
-          <div>
-            <h5 class="card-title mb-1">Activity Summary</h5>
-            <p class="card-subtitle">Avatar, status, and quick actions.</p>
-          </div>
-          <button class="btn btn-light btn-icon" type="button" aria-label="Refresh summary"><i class="bi bi-arrow-clockwise"></i></button>
-        </div>
-        <div class="card-body">
-          <div class="cards-activity-item"><span class="activity-icon"><i class="bi bi-check2-circle"></i></span><div><h6 class="mb-1">Module completed</h6><p class="text-app-secondary mb-0">Advanced layout patterns finished by 24 students.</p></div><span class="badge badge-soft-success">Done</span></div>
-          <div class="cards-activity-item"><span class="activity-icon"><i class="bi bi-calendar-event"></i></span><div><h6 class="mb-1">Live class scheduled</h6><p class="text-app-secondary mb-0">Component workshop starts tomorrow at 09:00.</p></div><span class="badge badge-soft-info">Soon</span></div>
-          <div class="cards-activity-item"><span class="activity-icon"><i class="bi bi-award"></i></span><div><h6 class="mb-1">Achievement unlocked</h6><p class="text-app-secondary mb-0">Learners reached a new weekly progress target.</p></div><span class="badge badge-soft-warning">New</span></div>
-        </div>
-      </div>
-    </div>
+  <div class="row g-3">
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><div><h5 class="card-title mb-1">Sales by Countries</h5><p class="card-subtitle">Monthly Sales Overview</p></div><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Sales country actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body cards-stack-list"><div class="cards-country-row"><span class="avatar">US</span><div><h6>$8,567k</h6><small>United states of america</small></div><span class="text-success">25.8%</span><strong>884k</strong></div><div class="cards-country-row"><span class="avatar avatar-success">BR</span><div><h6>$2,415k</h6><small>Brazil</small></div><span class="text-success">6.2%</span><strong>645k</strong></div><div class="cards-country-row"><span class="avatar avatar-warning">IN</span><div><h6>$865k</h6><small>India</small></div><span class="text-success">12.4%</span><strong>148k</strong></div><div class="cards-country-row"><span class="avatar avatar-info">AU</span><div><h6>$745k</h6><small>Australia</small></div><span class="text-success">11.9%</span><strong>86k</strong></div><div class="cards-country-row"><span class="avatar avatar-danger">FR</span><div><h6>$45</h6><small>France</small></div><span class="text-success">16.2%</span><strong>42k</strong></div><div class="cards-country-row"><span class="avatar">CN</span><div><h6>$12k</h6><small>China</small></div><span class="text-success">14.8%</span><strong>18k</strong></div></div></div></div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><div><h5 class="card-title mb-1">Order Statistics</h5><p class="card-subtitle">42.82k Total Sales</p></div><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Order statistic actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body"><div class="d-flex align-items-center justify-content-between mb-4"><div><h3 class="mb-0">8,258</h3><span class="text-app-secondary">Total Orders</span></div><div class="cards-radial cards-radial-72"><span>72%</span></div></div><div class="cards-stack-list"><div class="cards-icon-row"><span class="avatar"><i class="bi bi-phone"></i></span><div><h6>Electronic</h6><small>Mobile, Earbuds, TV</small></div><strong>82.5k</strong></div><div class="cards-icon-row"><span class="avatar avatar-success"><i class="bi bi-bag"></i></span><div><h6>Fashion</h6><small>T-shirt, Jeans, Shoes</small></div><strong>23.8k</strong></div><div class="cards-icon-row"><span class="avatar avatar-warning"><i class="bi bi-house"></i></span><div><h6>Decor</h6><small>Fine Art, Dining</small></div><strong>849k</strong></div><div class="cards-icon-row"><span class="avatar avatar-info"><i class="bi bi-trophy"></i></span><div><h6>Sports</h6><small>Football, Cricket Kit</small></div><strong>99</strong></div></div></div></div></div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><div><h5 class="card-title mb-1">Earning Reports</h5><p class="card-subtitle">Weekly Earnings Overview</p></div><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Earning report actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body cards-stack-list"><div class="cards-report-row"><span class="avatar"><i class="bi bi-cash-stack"></i></span><div><h6>Net Profit</h6><small>12.4k Sales</small></div><strong>$1,619 <span>18.6%</span></strong></div><div class="cards-report-row"><span class="avatar avatar-success"><i class="bi bi-graph-up"></i></span><div><h6>Total Income</h6><small>Sales, Affiliation</small></div><strong>$3,571 <span>39.6%</span></strong></div><div class="cards-report-row"><span class="avatar avatar-danger"><i class="bi bi-currency-dollar"></i></span><div><h6>Total Expenses</h6><small>ADVT, Marketing</small></div><strong>$430 <span>52.8%</span></strong></div><div class="cards-mini-bars mt-2" aria-label="Earning report bars"><span class="cards-bar-38"></span><span class="cards-bar-64"></span><span class="cards-bar-48"></span><span class="cards-bar-76"></span><span class="cards-bar-58"></span><span class="cards-bar-86"></span><span class="cards-bar-72"></span></div></div></div></div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-12 col-xl-8"><div class="card app-card"><div class="card-header app-card-header"><h5 class="card-title mb-0">Team Members</h5><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Team member actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="table-responsive"><table class="table app-table mb-0"><thead><tr><th>Name</th><th>Project</th><th>Task</th><th>Progress</th></tr></thead><tbody><tr><td><div class="table-user"><span class="table-user-avatar">NW</span><div><div class="table-user-name">Nathan Wagner</div><div class="table-user-meta">iOS Developer</div></div></div></td><td>Zipcar</td><td>87/135</td><td><div class="progress app-progress"><div class="progress-bar bg-primary cards-progress-64"></div></div></td></tr><tr><td><div class="table-user"><span class="table-user-avatar">EB</span><div><div class="table-user-name">Emma Bowen</div><div class="table-user-meta">UI/UX Designer</div></div></div></td><td>Bitbank</td><td>320/440</td><td><div class="progress app-progress"><div class="progress-bar bg-success cards-progress-72"></div></div></td></tr><tr><td><div class="table-user"><span class="table-user-avatar">AM</span><div><div class="table-user-name">Adrian McGuire</div><div class="table-user-meta">PHP Developer</div></div></div></td><td>Payers</td><td>50/82</td><td><div class="progress app-progress"><div class="progress-bar bg-warning cards-progress-48"></div></div></td></tr><tr><td><div class="table-user"><span class="table-user-avatar">AG</span><div><div class="table-user-name">Alma Gonzalez</div><div class="table-user-meta">Product Manager</div></div></div></td><td>Brandi</td><td>98/260</td><td><div class="progress app-progress"><div class="progress-bar bg-info cards-progress-38"></div></div></td></tr></tbody></table></div></div></div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header"><h5 class="card-title mb-0">Conversion Rate</h5><p class="card-subtitle">Compared To Last Month</p></div><div class="card-body"><div class="d-flex align-items-end gap-2 mb-4"><h2 class="mb-0">8.72%</h2><span class="text-success fw-semibold">4.8%</span></div><div class="cards-stack-list"><div class="cards-icon-row"><span class="avatar"><i class="bi bi-eye"></i></span><div><h6>Impressions</h6><small>12.4k Visits</small></div><strong>12.8%</strong></div><div class="cards-icon-row"><span class="avatar avatar-warning"><i class="bi bi-cart-plus"></i></span><div><h6>Added To Cart</h6><small>32 Product in cart</small></div><strong>-8.5%</strong></div><div class="cards-icon-row"><span class="avatar avatar-info"><i class="bi bi-bag-check"></i></span><div><h6>Checkout</h6><small>21 Products checkout</small></div><strong>9.12%</strong></div><div class="cards-icon-row"><span class="avatar avatar-success"><i class="bi bi-check-circle"></i></span><div><h6>Purchased</h6><small>12 Orders</small></div><strong>2.83%</strong></div><div class="cards-icon-row"><span class="avatar avatar-danger"><i class="bi bi-truck"></i></span><div><h6>Delivered</h6><small>120 Orders</small></div><strong>12.1%</strong></div></div></div></div></div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-12 col-xl-8"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Activity Timeline</h5><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Activity timeline actions"><i class="bi bi-three-dots-vertical"></i></button></div><div class="card-body"><div class="activity-list"><div class="activity-item"><span class="activity-icon"><i class="bi bi-receipt"></i></span><div class="activity-content"><div class="activity-title">12 Invoices have been paid</div><div class="activity-time">12 min ago</div><p class="activity-description">Invoices have been paid to the company.</p><span class="badge badge-soft-primary"><i class="bi bi-file-earmark-pdf me-1"></i>invoices.pdf</span></div></div><div class="activity-item"><span class="activity-icon"><i class="bi bi-person-video3"></i></span><div class="activity-content"><div class="activity-title">Client Meeting</div><div class="activity-time">45 min ago</div><p class="activity-description">Project meeting with john at 10:15am.</p><div class="table-user mt-2"><span class="table-user-avatar">LM</span><div><div class="table-user-name">Lester McCarthy</div><div class="table-user-meta">CEO of ThemeSelection</div></div></div></div></div><div class="activity-item"><span class="activity-icon"><i class="bi bi-folder-plus"></i></span><div class="activity-content"><div class="activity-title">Create a new project for client</div><div class="activity-time">2 Day Ago</div><p class="activity-description">5 team members in a project.</p><div class="avatar-group"><span class="avatar">A</span><span class="avatar avatar-success">B</span><span class="avatar avatar-warning">C</span><span class="avatar avatar-info">D</span><span class="avatar avatar-danger">E</span></div></div></div></div></div></div>
+    <div class="col-12 col-xl-4"><div class="card app-card h-100"><div class="card-header"><h5 class="card-title mb-0">Finance Summary</h5><p class="card-subtitle">Check out each column for more details</p></div><div class="card-body"><div class="cards-summary-grid"><div><span>Annual Companies Taxes</span><strong>$500,00</strong></div><div><span>Next Tax Review Date</span><strong>July 24,2022</strong></div><div><span>Average Product Price</span><strong>$89.90</strong></div><div><span>Satisfaction Rate</span><strong>75%</strong></div></div><div class="avatar-group mt-4"><span class="avatar">A</span><span class="avatar avatar-success">B</span><span class="avatar avatar-warning">C</span><span class="avatar avatar-info">D</span></div><p class="text-app-muted small mt-3 mb-0">5 Days Ago</p></div></div></div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-12 col-xl-6"><div class="card app-card"><div class="card-header"><h5 class="card-title mb-0">Add New Card</h5><p class="card-subtitle">Add new card to complete payment</p></div><div class="card-body"><div class="row g-3"><div class="col-12"><label class="form-label">Card Number</label><input class="form-control" value="1356 3215 6548 7898"></div><div class="col-md-6"><label class="form-label">Name</label><input class="form-control" value="John Doe"></div><div class="col-md-3"><label class="form-label">Exp. Date</label><input class="form-control" value="MM/YY"></div><div class="col-md-3"><label class="form-label">CVV Code</label><input class="form-control" value="654"></div><div class="col-12"><label class="form-check"><input class="form-check-input" type="checkbox" checked><span class="form-check-label">Save card for future billing?</span></label></div><div class="col-12 d-flex gap-2"><button class="btn btn-primary" type="button">Submit</button><button class="btn btn-light" type="button">Cancel</button></div></div></div></div></div>
+    <div class="col-12 col-xl-6"><div class="card app-card"><div class="card-header"><h5 class="card-title mb-0">Upgrade Plan</h5><p class="card-subtitle">Choose the best plan for user.</p></div><div class="card-body"><label class="form-label">Choose Plan</label><select class="form-select mb-3"><option>Standard - $99/month</option><option>Business - $2,124/year</option><option>Enterprise - custom</option></select><button class="btn btn-primary mb-4" type="button">Upgrade</button><hr><h6>User current plan is standard plan</h6><div class="cards-price"><span>Current balance</span><strong>$99</strong><em>/month</em></div></div></div></div>
   </div>
 </section>

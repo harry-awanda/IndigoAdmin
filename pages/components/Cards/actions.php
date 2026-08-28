@@ -1,55 +1,47 @@
-<section class="components-page cards-showcase">
-  <div class="row g-3">
-    <div class="col-12 col-md-6 col-xl-4">
-      <div class="card app-card h-100">
-        <div class="card-header app-card-header">
-          <div><h5 class="card-title mb-1">Dropdown Action</h5><p class="card-subtitle">Compact action pattern.</p></div>
-          <div class="dropdown">
-            <button class="btn btn-light btn-icon" type="button" data-bs-toggle="dropdown" aria-label="Card actions"><i class="bi bi-three-dots-vertical"></i></button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="coming-soon.php">Edit</a></li>
-              <li><a class="dropdown-item" href="coming-soon.php">Duplicate</a></li>
-              <li><a class="dropdown-item text-danger" href="coming-soon.php">Delete</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-body">
-          <p class="text-app-secondary mb-4">Secondary actions stay available without making the card visually noisy.</p>
-          <div class="d-flex align-items-center gap-2"><span class="avatar avatar-success"><i class="bi bi-check2"></i></span><div><h6 class="mb-0">Published</h6><span class="text-app-muted small">Last update 12 minutes ago</span></div></div>
-        </div>
-      </div>
+<section class="components-page cards-showcase cards-actions-page">
+  <section class="component-section">
+    <div class="card app-card">
+      <div class="card-header"><h5 class="card-title mb-0">Cards Action</h5></div>
+      <div class="table-responsive"><table class="table app-table mb-0"><thead><tr><th>Action</th><th>Icon</th><th>Details</th></tr></thead><tbody><tr><td>Collapse</td><td><i class="bi bi-chevron-up"></i></td><td>Collapse card content using a collapse action.</td></tr><tr><td>Refresh Content</td><td><i class="bi bi-arrow-clockwise"></i></td><td>Refresh card content using a refresh action.</td></tr><tr><td>Expand Card</td><td><i class="bi bi-arrows-fullscreen"></i></td><td>Maximize your card using an expand action.</td></tr><tr><td>Remove Card</td><td><i class="bi bi-x-lg"></i></td><td>Remove card from page using a close action.</td></tr></tbody></table></div>
     </div>
+  </section>
 
-    <div class="col-12 col-md-6 col-xl-4">
-      <div class="card app-card h-100 cards-announcement">
-        <div class="card-body">
-          <div class="d-flex align-items-start justify-content-between gap-3 mb-3"><div class="icon-box"><i class="bi bi-megaphone"></i></div><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Dismiss announcement"><i class="bi bi-x-lg"></i></button></div>
-          <h5 class="card-title mb-2">Dismiss Card</h5>
-          <p class="text-app-secondary mb-4">Use a dismiss action for announcements, onboarding tips, or optional notices.</p>
-          <div class="d-flex flex-wrap gap-2"><button class="btn btn-primary btn-sm" type="button">Accept</button><button class="btn btn-light btn-sm" type="button">Later</button></div>
-        </div>
-      </div>
+  <section class="component-section">
+    <h5 class="component-heading">Examples</h5>
+    <p class="text-app-secondary">Use action buttons in the card header to show static examples of the same interaction patterns.</p>
+    <div class="row g-3">
+      <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Collapsible Card</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Collapse card"><i class="bi bi-chevron-up"></i></button></div><div class="card-body"><p class="text-app-secondary mb-0">Click on the collapse icon in a full implementation to hide or show content.</p></div></div></div>
+      <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Refresh Content</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Refresh card"><i class="bi bi-arrow-clockwise"></i></button></div><div class="card-body"><p class="text-app-secondary mb-0">Use a card alert or loading state when content is refreshed.</p></div></div></div>
+      <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Expand Card</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Expand card"><i class="bi bi-arrows-fullscreen"></i></button></div><div class="card-body"><p class="text-app-secondary mb-0">Fullscreen action can make detailed content easier to inspect.</p></div></div></div>
+      <div class="col-md-6 col-xl-3"><div class="card app-card h-100"><div class="card-header app-card-header"><h6 class="mb-0">Remove Card</h6><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Remove card"><i class="bi bi-x-lg"></i></button></div><div class="card-body"><p class="text-app-secondary mb-0">Close action removes the card from the visible workspace.</p></div></div></div>
     </div>
+  </section>
 
-    <div class="col-12 col-md-6 col-xl-4">
-      <div class="card app-card h-100">
-        <img src="Assets/img/cards/webinar-cover.png" class="cards-media" alt="Workshop card action">
-        <div class="card-body"><span class="badge badge-soft-info mb-3">Workshop</span><h5 class="card-title mb-2">Action Footer</h5><p class="text-app-secondary mb-0">A media card can keep its main action in the footer for a calmer layout.</p></div>
-        <div class="app-card-footer"><span>24 seats left</span><a href="coming-soon.php" class="card-footer-link">Reserve</a></div>
-      </div>
+  <section class="component-section">
+    <h5 class="component-heading">Header Elements</h5>
+    <div class="row g-3">
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><span>Card Header</span><span class="badge badge-soft-primary">New</span></div><div class="card-body"><h5 class="card-title">Card Title</h5><p class="text-app-secondary mb-0">Sample card header with badge.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Card Title</h5><span class="badge rounded-pill text-bg-primary">10</span></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card title with outline badge.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><span>Card Header</span><button class="btn btn-primary btn-sm" type="button">Button</button></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card header with extra small button.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Card Title</h5><button class="btn btn-light btn-icon btn-sm" type="button" aria-label="Settings"><i class="bi bi-gear"></i></button></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card title with small icon button.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><span>Card Header</span><div class="topbar-search cards-header-search"><i class="bi bi-search"></i><input type="search" placeholder="Search" aria-label="Search card"></div></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card header with extra search input box.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Card Title</h5><div class="form-check form-switch mb-0"><input class="form-check-input" type="checkbox" role="switch" checked aria-label="Toggle card"></div></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card title with switch.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><span>Card Header</span><span class="text-app-secondary">Sample Text</span></div><div class="card-body"><h5 class="card-title">Card Title</h5><p class="text-app-secondary mb-0">Sample card header with text.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><h5 class="card-title mb-0">Card Title</h5><span class="text-app-secondary">Sample Text</span></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card title with text.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card app-card h-100"><div class="card-header app-card-header"><div><span>Card Header</span><h5 class="card-title mb-0">Hello!</h5></div><div class="dropdown"><button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">Primary</button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="coming-soon.php">Action</a></li><li><a class="dropdown-item" href="coming-soon.php">Another action</a></li><li><a class="dropdown-item" href="coming-soon.php">Something else here</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="coming-soon.php">Separated link</a></li></ul></div></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card header with badge and dropdown.</p></div></div></div>
+      <div class="col-12"><div class="card app-card"><div class="card-header app-card-header"><h5 class="card-title mb-0">Card Title</h5><div class="cards-header-controls"><div class="form-check form-switch mb-0"><input class="form-check-input" type="checkbox" role="switch" checked aria-label="Header switch"></div><select class="form-select form-select-sm" aria-label="Header select"><option>Select</option><option>Option A</option></select><button class="btn btn-primary btn-sm" type="button">Go</button></div></div><div class="card-body"><p class="text-app-secondary mb-0">Sample card title with switch, select box and button.</p></div></div></div>
     </div>
-  </div>
+  </section>
 
-  <div class="row g-3">
-    <div class="col-12 col-lg-6">
-      <div class="card app-card h-100 cards-selectable">
-        <div class="card-body"><div class="d-flex align-items-start gap-3"><span class="cards-select-indicator"><i class="bi bi-check2"></i></span><div><h5 class="card-title mb-2">Selectable Card</h5><p class="text-app-secondary mb-3">A selected state can live directly in static markup without extra state handling.</p><div class="d-flex flex-wrap gap-2"><span class="badge badge-soft-primary">Selected</span><span class="badge badge-soft-success">Static Markup</span></div></div></div></div>
-      </div>
+  <section class="component-section">
+    <h5 class="component-heading">Draggable Cards</h5>
+    <div class="row g-3">
+      <div class="col-md-6 col-xl-4"><div class="card cards-solid cards-solid-primary"><div class="card-header app-card-header"><span>Drag me!</span><i class="bi bi-grip-vertical"></i></div><div class="card-body"><h5 class="card-title">Primary card title</h5><p class="card-text">Some quick example text to build on the card title and make up.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card cards-solid cards-solid-secondary"><div class="card-header app-card-header"><span>Drag me!</span><i class="bi bi-grip-vertical"></i></div><div class="card-body"><h5 class="card-title">Secondary card title</h5><p class="card-text">Some quick example text to build on the card title and make up.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card cards-solid cards-solid-success"><div class="card-header app-card-header"><span>Drag me!</span><i class="bi bi-grip-vertical"></i></div><div class="card-body"><h5 class="card-title">Success card title</h5><p class="card-text">Some quick example text to build on the card title and make up.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card cards-solid cards-solid-danger"><div class="card-header app-card-header"><span>Drag me!</span><i class="bi bi-grip-vertical"></i></div><div class="card-body"><h5 class="card-title">Danger card title</h5><p class="card-text">Some quick example text to build on the card title and make up.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card cards-solid cards-solid-warning"><div class="card-header app-card-header"><span>Drag me!</span><i class="bi bi-grip-vertical"></i></div><div class="card-body"><h5 class="card-title">Warning card title</h5><p class="card-text">Some quick example text to build on the card title and make up.</p></div></div></div>
+      <div class="col-md-6 col-xl-4"><div class="card cards-solid cards-solid-info"><div class="card-header app-card-header"><span>Drag me!</span><i class="bi bi-grip-vertical"></i></div><div class="card-body"><h5 class="card-title">Info card title</h5><p class="card-text">Some quick example text to build on the card title and make up.</p></div></div></div>
     </div>
-    <div class="col-12 col-lg-6">
-      <div class="card app-card h-100">
-        <div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3"><div><h5 class="card-title mb-2">Inline CTA Card</h5><p class="text-app-secondary mb-0">Pair short summary copy with immediate primary and secondary actions.</p></div><div class="d-flex flex-wrap gap-2"><button type="button" class="btn btn-primary btn-sm">Start</button><button type="button" class="btn btn-light btn-sm">Details</button></div></div>
-      </div>
-    </div>
-  </div>
+  </section>
 </section>
