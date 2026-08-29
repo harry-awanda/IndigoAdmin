@@ -79,25 +79,25 @@
       </button>
       <div class="sidebar-submenu collapse" id="uiMenu">
         <div class="sidebar-submenu-inner">
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Accordion"><span>Accordion</span></a>
+          <a href="accordion.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Accordion"><span>Accordion</span></a>
           <a href="alerts.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Alerts"><span>Alerts</span></a>
           <a href="badges.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Badges"><span>Badges</span></a>
           <a href="buttons.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Buttons"><span>Buttons</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Carousel"><span>Carousel</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Collapse"><span>Collapse</span></a>
+          <a href="carousel.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Carousel"><span>Carousel</span></a>
+          <a href="collapse.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Collapse"><span>Collapse</span></a>
           <a href="dropdowns.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Dropdowns"><span>Dropdowns</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Footer"><span>Footer</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="List groups"><span>List groups</span></a>
+          <a href="footer-ui.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Footer"><span>Footer</span></a>
+          <a href="list-groups.php" class="sidebar-link sidebar-sublink" data-sidebar-title="List groups"><span>List groups</span></a>
           <a href="modals.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Modals"><span>Modals</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Navbar"><span>Navbar</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Offcanvas"><span>Offcanvas</span></a>
+          <a href="navbar-ui.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Navbar"><span>Navbar</span></a>
+          <a href="offcanvas.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Offcanvas"><span>Offcanvas</span></a>
           <a href="pagination-breadcrumbs.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Pagination & Breadcrumbs"><span>Pagination & Breadcrumbs</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Progress"><span>Progress</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Spinners"><span>Spinners</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Tabs & Pills"><span>Tabs & Pills</span></a>
+          <a href="progress-ui.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Progress"><span>Progress</span></a>
+          <a href="spinners.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Spinners"><span>Spinners</span></a>
+          <a href="tabs-pills.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Tabs & Pills"><span>Tabs & Pills</span></a>
           <a href="toasts.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Toasts"><span>Toasts</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Tooltips & Popovers"><span>Tooltips & Popovers</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Typography"><span>Typography</span></a>
+          <a href="tooltips-popovers.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Tooltips & Popovers"><span>Tooltips & Popovers</span></a>
+          <a href="typography.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Typography"><span>Typography</span></a>
         </div>
       </div>
 
