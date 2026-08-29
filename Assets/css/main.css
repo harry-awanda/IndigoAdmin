@@ -2962,3 +2962,33 @@ body {
     width: 100%;
   }
 }
+.ui-showcase .component-divider {
+  margin: 1.5rem 0;
+  border-color: var(--app-border);
+  opacity: 1;
+}
+
+.ui-showcase .hide-arrow::after {
+  display: none;
+}
+
+.ui-showcase .btn-xl {
+  padding: .875rem 1.75rem;
+  font-size: 1.125rem;
+  border-radius: .5rem;
+}
+
+.ui-showcase .btn-xs {
+  padding: .25rem .625rem;
+  font-size: .75rem;
+  border-radius: .25rem;
+}
+
+.ui-showcase .dropdown-menu-text {
+  max-width: 220px;
+  color: var(--app-text-secondary);
+}
+
+.ui-showcase .dropdown-menu-form {
+  min-width: 280px;
+}
