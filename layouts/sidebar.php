@@ -117,7 +117,23 @@
         </div>
       </div>
       <div class="sidebar-menu-label">Forms & Tables</div>
-      <a href="forms.php" class="sidebar-link" title="Form Elements" data-sidebar-title="Form Elements"><i class="bi bi-input-cursor-text"></i><span>Form Elements</span></a>
+      <button class="sidebar-link sidebar-group-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#formElementsMenu" aria-expanded="false" aria-controls="formElementsMenu" data-sidebar-title="Form Elements">
+        <i class="bi bi-input-cursor-text"></i><span>Form Elements</span><i class="bi bi-chevron-down sidebar-chevron"></i>
+      </button>
+      <div class="sidebar-submenu collapse" id="formElementsMenu">
+        <div class="sidebar-submenu-inner">
+          <a href="forms-basic-inputs.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Basic Inputs"><span>Basic Inputs</span></a>
+          <a href="forms-input-groups.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Input groups"><span>Input groups</span></a>
+          <a href="forms-custom-options.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Custom Options"><span>Custom Options</span></a>
+          <a href="forms-editors.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Editors"><span>Editors</span></a>
+          <a href="forms-file-upload.php" class="sidebar-link sidebar-sublink" data-sidebar-title="File Upload"><span>File Upload</span></a>
+          <a href="forms-pickers.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Pickers"><span>Pickers</span></a>
+          <a href="forms-select-tags.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Select & Tags"><span>Select & Tags</span></a>
+          <a href="forms-sliders.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Sliders"><span>Sliders</span></a>
+          <a href="forms-switches.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Switches"><span>Switches</span></a>
+          <a href="forms-extras.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Extras"><span>Extras</span></a>
+        </div>
+      </div>
       <a href="coming-soon.php" class="sidebar-link" title="Form Layouts" data-sidebar-title="Form Layouts"><i class="bi bi-ui-checks-grid"></i><span>Form Layouts</span></a>
       <a href="coming-soon.php" class="sidebar-link" title="Form Wizard" data-sidebar-title="Form Wizard"><i class="bi bi-list-ol"></i><span>Form Wizard</span></a>
       <a href="tables.php" class="sidebar-link" title="Tables" data-sidebar-title="Tables"><i class="bi bi-table"></i><span>Tables</span></a>
