@@ -134,7 +134,16 @@
           <a href="forms-extras.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Extras"><span>Extras</span></a>
         </div>
       </div>
-      <a href="coming-soon.php" class="sidebar-link" title="Form Layouts" data-sidebar-title="Form Layouts"><i class="bi bi-ui-checks-grid"></i><span>Form Layouts</span></a>
+      <button class="sidebar-link sidebar-group-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#formLayoutsMenu" aria-expanded="false" aria-controls="formLayoutsMenu" data-sidebar-title="Form Layouts">
+        <i class="bi bi-ui-checks-grid"></i><span>Form Layouts</span><i class="bi bi-chevron-down sidebar-chevron"></i>
+      </button>
+      <div class="sidebar-submenu collapse" id="formLayoutsMenu">
+        <div class="sidebar-submenu-inner">
+          <a href="form-layouts-vertical.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Vertical Form"><span>Vertical Form</span></a>
+          <a href="form-layouts-horizontal.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Horizontal Form"><span>Horizontal Form</span></a>
+          <a href="form-layouts-sticky-actions.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Sticky Actions"><span>Sticky Actions</span></a>
+        </div>
+      </div>
       <a href="coming-soon.php" class="sidebar-link" title="Form Wizard" data-sidebar-title="Form Wizard"><i class="bi bi-list-ol"></i><span>Form Wizard</span></a>
       <a href="tables.php" class="sidebar-link" title="Tables" data-sidebar-title="Tables"><i class="bi bi-table"></i><span>Tables</span></a>
       <a href="coming-soon.php" class="sidebar-link" title="Datatables" data-sidebar-title="Datatables"><i class="bi bi-grid-3x3-gap"></i><span>Datatables</span></a>
