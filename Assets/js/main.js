@@ -287,6 +287,223 @@
       if (event.key === 'Escape' && !backdrop.hidden) closeAlert();
     });
   }
+
+  function initFormEditors() {
+    document.querySelectorAll('[data-editor-toolbar]').forEach(function (toolbar) {
+      const editor = document.getElementById(toolbar.getAttribute('data-editor-toolbar'));
+      if (!editor) return;
+
+      toolbar.querySelectorAll('[data-editor-command]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          editor.focus();
+          document.execCommand(button.getAttribute('data-editor-command'), false, button.getAttribute('data-editor-value') || null);
+          button.classList.toggle('is-active');
+        });
+      });
+    });
+  }
+
+  function initFileUploadDemo() {
+    document.querySelectorAll('[data-upload-zone]').forEach(function (zone) {
+      const input = zone.querySelector('input[type="file"]');
+      const list = zone.parentElement ? zone.parentElement.querySelector('[data-upload-list]') : null;
+
+      if (!input || !list) return;
+
+      function renderFiles(files) {
+        list.innerHTML = '';
+        Array.from(files).forEach(function (file) {
+          const item = document.createElement('div');
+          const icon = document.createElement('i');
+          const content = document.createElement('div');
+          const name = document.createElement('strong');
+          const size = document.createElement('small');
+
+          item.className = 'upload-item';
+          icon.className = 'bi bi-file-earmark';
+          name.textContent = file.name;
+          size.className = 'd-block text-app-secondary';
+          size.textContent = `${Math.max(1, Math.round(file.size / 1024))} KB`;
+
+          content.appendChild(name);
+          content.appendChild(size);
+          item.appendChild(icon);
+          item.appendChild(content);
+          list.appendChild(item);
+        });
+      }
+
+      input.addEventListener('change', function () {
+        renderFiles(input.files);
+      });
+
+      zone.addEventListener('dragover', function (event) {
+        event.preventDefault();
+        zone.classList.add('is-dragover');
+      });
+
+      zone.addEventListener('dragleave', function () {
+        zone.classList.remove('is-dragover');
+      });
+
+      zone.addEventListener('drop', function (event) {
+        event.preventDefault();
+        zone.classList.remove('is-dragover');
+        renderFiles(event.dataTransfer.files);
+      });
+    });
+  }
+
+  function initTagInputs() {
+    document.querySelectorAll('[data-tag-input]').forEach(function (tagInput) {
+      const input = tagInput.querySelector('input');
+      const list = tagInput.querySelector('.tag-list');
+
+      if (!input || !list) return;
+
+      function addTag(value) {
+        const label = value.trim();
+        if (!label) return;
+
+        const tag = document.createElement('span');
+        const remove = document.createElement('button');
+
+        tag.className = 'tag-pill';
+        tag.appendChild(document.createTextNode(label));
+        remove.type = 'button';
+        remove.setAttribute('aria-label', `Remove ${label}`);
+        remove.textContent = 'x';
+        tag.appendChild(remove);
+        list.appendChild(tag);
+        input.value = '';
+      }
+
+      tagInput.addEventListener('click', function (event) {
+        if (event.target.tagName === 'BUTTON') {
+          event.target.closest('.tag-pill').remove();
+          return;
+        }
+        input.focus();
+      });
+
+      input.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ',') {
+          event.preventDefault();
+          addTag(input.value.replace(',', ''));
+        }
+
+        if (event.key === 'Backspace' && !input.value && list.lastElementChild) {
+          list.lastElementChild.remove();
+        }
+      });
+    });
+  }
+
+  function initRangeValues() {
+    document.querySelectorAll('[data-range-value]').forEach(function (range) {
+      const value = range.parentElement ? range.parentElement.querySelector('.range-value') : null;
+      if (!value) return;
+
+      function updateValue() {
+        value.textContent = range.value;
+      }
+
+      range.addEventListener('input', updateValue);
+      updateValue();
+    });
+  }
+
+  function initPickerPreviews() {
+    document.querySelectorAll('[data-date-range-summary]').forEach(function (summary) {
+      const start = document.getElementById(summary.getAttribute('data-start'));
+      const end = document.getElementById(summary.getAttribute('data-end'));
+      if (!start || !end) return;
+
+      function updateSummary() {
+        summary.textContent = `Selected range: ${start.value || '-'} to ${end.value || '-'}`;
+      }
+
+      start.addEventListener('change', updateSummary);
+      end.addEventListener('change', updateSummary);
+      updateSummary();
+    });
+
+    document.querySelectorAll('[data-color-preview]').forEach(function (input) {
+      const box = document.querySelector('[data-color-preview-box]');
+      const value = document.querySelector('[data-color-preview-value]');
+      if (!box || !value) return;
+
+      function updateColor() {
+        box.style.backgroundColor = input.value;
+        value.textContent = input.value;
+      }
+
+      input.addEventListener('input', updateColor);
+      updateColor();
+    });
+  }
+
+  function initFormExtras() {
+    document.querySelectorAll('[data-maxlength-counter]').forEach(function (field) {
+      const current = field.parentElement ? field.parentElement.querySelector('[data-maxlength-current]') : null;
+      if (!current) return;
+
+      function updateCount() {
+        current.textContent = field.value.length;
+      }
+
+      field.addEventListener('input', updateCount);
+      updateCount();
+    });
+
+    document.querySelectorAll('[data-password-toggle]').forEach(function (button) {
+      const input = document.getElementById(button.getAttribute('data-password-toggle'));
+      if (!input) return;
+
+      button.addEventListener('click', function () {
+        input.type = input.type === 'password' ? 'text' : 'password';
+        button.innerHTML = input.type === 'password' ? '<i class="bi bi-eye"></i>' : '<i class="bi bi-eye-slash"></i>';
+      });
+    });
+
+    document.querySelectorAll('[data-copy-target]').forEach(function (button) {
+      const target = document.getElementById(button.getAttribute('data-copy-target'));
+      const feedback = button.closest('.card-body') ? button.closest('.card-body').querySelector('[data-copy-feedback]') : null;
+      if (!target) return;
+
+      button.addEventListener('click', function () {
+        target.select();
+        document.execCommand('copy');
+        if (feedback) feedback.textContent = 'Copied to clipboard.';
+      });
+    });
+
+    document.querySelectorAll('[data-autosize-textarea]').forEach(function (textarea) {
+      function resizeTextarea() {
+        textarea.style.height = 'auto';
+        textarea.style.height = `${textarea.scrollHeight}px`;
+      }
+
+      textarea.addEventListener('input', resizeTextarea);
+      resizeTextarea();
+    });
+
+    document.querySelectorAll('[data-phone-mask]').forEach(function (input) {
+      input.addEventListener('input', function () {
+        const digits = input.value.replace(/\D/g, '').slice(0, 10);
+        const area = digits.slice(0, 3);
+        const prefix = digits.slice(3, 6);
+        const line = digits.slice(6, 10);
+        input.value = digits.length > 6 ? `(${area}) ${prefix}-${line}` : digits.length > 3 ? `(${area}) ${prefix}` : area;
+      });
+    });
+
+    document.querySelectorAll('[data-card-mask]').forEach(function (input) {
+      input.addEventListener('input', function () {
+        input.value = input.value.replace(/\D/g, '').slice(0, 16).replace(/(.{4})/g, '$1 ').trim();
+      });
+    });
+  }
   function dispatchReadyEvent() {
     document.dispatchEvent(new CustomEvent('app:ready'));
   }
@@ -301,6 +518,12 @@
   initBlockUiDemo();
   initDragAndDropDemo();
   initAppAlertDemo();
+  initFormEditors();
+  initFileUploadDemo();
+  initTagInputs();
+  initRangeValues();
+  initPickerPreviews();
+  initFormExtras();
   dispatchReadyEvent();
 
   window.AppToast = {
