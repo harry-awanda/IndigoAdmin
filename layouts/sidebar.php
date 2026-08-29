@@ -106,15 +106,16 @@
       </button>
       <div class="sidebar-submenu collapse" id="extendedUiMenu">
         <div class="sidebar-submenu-inner">
-          <a href="utilities.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Avatar"><span>Avatar</span></a>
-          <a href="empty-state.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Miscellaneous"><span>Miscellaneous</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="BlockUI"><span>BlockUI</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Drag & Drop"><span>Drag & Drop</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="SweetAlert2"><span>SweetAlert2</span></a>
-          <a href="coming-soon.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Timeline"><span>Timeline</span></a>
+          <a href="extended-ui-avatar.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Avatar"><span>Avatar</span></a>
+          <a href="extended-ui-blockui.php" class="sidebar-link sidebar-sublink" data-sidebar-title="BlockUI"><span>BlockUI</span></a>
+          <a href="extended-ui-drag-and-drop.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Drag & Drop"><span>Drag & Drop</span></a>
+          <a href="extended-ui-perfect-scrollbar.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Perfect Scrollbar"><span>Perfect Scrollbar</span></a>
+          <a href="extended-ui-sweetalert2.php" class="sidebar-link sidebar-sublink" data-sidebar-title="SweetAlert2"><span>SweetAlert2</span></a>
+          <a href="extended-ui-text-divider.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Text Divider"><span>Text Divider</span></a>
+          <a href="extended-ui-timeline.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Timeline"><span>Timeline</span></a>
+          <a href="extended-ui-misc.php" class="sidebar-link sidebar-sublink" data-sidebar-title="Miscellaneous"><span>Miscellaneous</span></a>
         </div>
       </div>
-
       <div class="sidebar-menu-label">Forms & Tables</div>
       <a href="forms.php" class="sidebar-link" title="Form Elements" data-sidebar-title="Form Elements"><i class="bi bi-input-cursor-text"></i><span>Form Elements</span></a>
       <a href="coming-soon.php" class="sidebar-link" title="Form Layouts" data-sidebar-title="Form Layouts"><i class="bi bi-ui-checks-grid"></i><span>Form Layouts</span></a>
